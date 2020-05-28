@@ -1,3 +1,4 @@
+# typed: true
 class CompaniesController < ApplicationController
   def index
     @companies = Company.all

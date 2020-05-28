@@ -1,3 +1,4 @@
+# typed: false
 module RequestSpecHelper
   # Parse JSON response to ruby hash
   def json
