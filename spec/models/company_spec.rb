@@ -17,4 +17,23 @@ RSpec.describe Company, type: :model do
       expect(company.tasks.length).to eq(3)
     end
   end
+
+  it 'company_years should associate properly' do
+    company = create(:company)
+    year = create(:year, name: 2020)
+    company.years << year
+
+    expect(company.years).to eq([year])
+  end
+
+  describe '#co2_produced_in' do
+    it 'should tell you how much co2 the company produced in the given year' do
+      year = create(:year, name: 2020)
+      company = create(:company)
+      co2_produced = 1000
+      create(:company_year, company: company, year: year, co2_produced: co2_produced)
+
+      expect(company.co2_produced_in(year.name)).to eq (co2_produced)
+    end
+  end
 end
