@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_28_193605) do
+ActiveRecord::Schema.define(version: 2020_05_29_104629) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,4 +23,16 @@ ActiveRecord::Schema.define(version: 2020_05_28_193605) do
     t.index ["name"], name: "index_companies_on_name", unique: true
   end
 
+  create_table "tasks", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.integer "percent_done"
+    t.bigint "company_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["company_id"], name: "index_tasks_on_company_id"
+    t.index ["name"], name: "index_tasks_on_name"
+  end
+
+  add_foreign_key "tasks", "companies"
 end
