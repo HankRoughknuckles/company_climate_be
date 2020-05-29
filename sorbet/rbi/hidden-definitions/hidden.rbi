@@ -3828,9 +3828,43 @@ end
 class Company
   include ::Company::GeneratedAttributeMethods
   include ::Company::GeneratedAssociationMethods
+  def after_add_for_tasks(); end
+
+  def after_add_for_tasks=(val); end
+
+  def after_add_for_tasks?(); end
+
+  def after_remove_for_tasks(); end
+
+  def after_remove_for_tasks=(val); end
+
+  def after_remove_for_tasks?(); end
+
+  def autosave_associated_records_for_tasks(*args); end
+
+  def before_add_for_tasks(); end
+
+  def before_add_for_tasks=(val); end
+
+  def before_add_for_tasks?(); end
+
+  def before_remove_for_tasks(); end
+
+  def before_remove_for_tasks=(val); end
+
+  def before_remove_for_tasks?(); end
+
+  def validate_associated_records_for_tasks(*args); end
 end
 
 module Company::GeneratedAssociationMethods
+  def task_ids(); end
+
+  def task_ids=(ids); end
+
+  def tasks(); end
+
+  def tasks=(value); end
 end
 
 module Company::GeneratedAssociationMethods
@@ -3843,48 +3877,30 @@ module Company::GeneratedAttributeMethods
   extend ::Mutex_m
 end
 
-class CompanyTask
-  include ::CompanyTask::GeneratedAttributeMethods
-  include ::CompanyTask::GeneratedAssociationMethods
-  def autosave_associated_records_for_company(*args); end
+class Company
+  def self.after_add_for_tasks(); end
 
-  def autosave_associated_records_for_task(*args); end
-end
+  def self.after_add_for_tasks=(val); end
 
-module CompanyTask::GeneratedAssociationMethods
-  def build_company(*args, &block); end
+  def self.after_add_for_tasks?(); end
 
-  def build_task(*args, &block); end
+  def self.after_remove_for_tasks(); end
 
-  def company(); end
+  def self.after_remove_for_tasks=(val); end
 
-  def company=(value); end
+  def self.after_remove_for_tasks?(); end
 
-  def create_company(*args, &block); end
+  def self.before_add_for_tasks(); end
 
-  def create_company!(*args, &block); end
+  def self.before_add_for_tasks=(val); end
 
-  def create_task(*args, &block); end
+  def self.before_add_for_tasks?(); end
 
-  def create_task!(*args, &block); end
+  def self.before_remove_for_tasks(); end
 
-  def reload_company(); end
+  def self.before_remove_for_tasks=(val); end
 
-  def reload_task(); end
-
-  def task(); end
-
-  def task=(value); end
-end
-
-module CompanyTask::GeneratedAssociationMethods
-end
-
-module CompanyTask::GeneratedAttributeMethods
-end
-
-module CompanyTask::GeneratedAttributeMethods
-  extend ::Mutex_m
+  def self.before_remove_for_tasks?(); end
 end
 
 class Complex
@@ -9208,10 +9224,6 @@ class Hash
   def update(*_); end
 end
 
-class Hash
-  def self.from_trusted_xml(xml); end
-end
-
 HashWithIndifferentAccess = ActiveSupport::HashWithIndifferentAccess
 
 module I18n
@@ -10674,13 +10686,7 @@ end
 class Net::HTTPAlreadyReported
 end
 
-class Net::HTTPClientError
-end
-
-Net::HTTPClientErrorCode::EXCEPTION_TYPE = Net::HTTPServerException
-
-class Net::HTTPClientError
-end
+Net::HTTPClientErrorCode = Net::HTTPClientError
 
 Net::HTTPClientException = Net::HTTPServerException
 
@@ -10691,7 +10697,13 @@ end
 class Net::HTTPEarlyHints
 end
 
-Net::HTTPFatalErrorCode = Net::HTTPClientError
+class Net::HTTPClientError
+end
+
+Net::HTTPFatalErrorCode::EXCEPTION_TYPE = Net::HTTPServerException
+
+class Net::HTTPClientError
+end
 
 class Net::HTTPGatewayTimeout
   HAS_BODY = ::T.let(nil, ::T.untyped)
@@ -17408,9 +17420,21 @@ end
 class Task
   include ::Task::GeneratedAttributeMethods
   include ::Task::GeneratedAssociationMethods
+  def autosave_associated_records_for_company(*args); end
 end
 
 module Task::GeneratedAssociationMethods
+  def build_company(*args, &block); end
+
+  def company(); end
+
+  def company=(value); end
+
+  def create_company(*args, &block); end
+
+  def create_company!(*args, &block); end
+
+  def reload_company(); end
 end
 
 module Task::GeneratedAssociationMethods

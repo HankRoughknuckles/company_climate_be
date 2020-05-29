@@ -1036,8 +1036,8 @@
 # uninitialized constant ActiveRecord::AdvisoryLockBase(abstract)::ACTIONS
 # Did you mean?  ActiveRecord::AdvisoryLockBase::ACTIONS
 # uninitialized constant ActiveRecord::AdvisoryLockBase(abstract)::CALLBACKS
-# Did you mean?  ActiveRecord::AdvisoryLockBase::Callbacks
-#                ActiveRecord::Callbacks
+# Did you mean?  ActiveRecord::Callbacks
+#                ActiveRecord::AdvisoryLockBase::Callbacks
 #                ActiveRecord::AdvisoryLockBase::Callback
 #                ActiveRecord::AdvisoryLockBase::CALLBACKS
 # uninitialized constant ActiveRecord::AdvisoryLockBase(abstract)::CALLBACK_FILTER_TYPES
@@ -1143,26 +1143,26 @@
 # wrong constant name rolledback?
 # wrong constant name <static-init>
 # wrong constant name collect?
-# uninitialized constant #<Class:0x00007fb04cf448f0>::ACTIONS
+# uninitialized constant #<Class:0x00007fa9a12972d0>::ACTIONS
 # Did you mean?  ActiveRecord::InternalMetadata::ACTIONS
-# uninitialized constant #<Class:0x00007fb04cf448f0>::CALLBACKS
-# Did you mean?  ActiveRecord::InternalMetadata::Callbacks
-#                ActiveRecord::Callbacks
+# uninitialized constant #<Class:0x00007fa9a12972d0>::CALLBACKS
+# Did you mean?  ActiveRecord::Callbacks
+#                ActiveRecord::InternalMetadata::Callbacks
 #                ActiveRecord::InternalMetadata::Callback
 #                ActiveRecord::InternalMetadata::CALLBACKS
-# uninitialized constant #<Class:0x00007fb04cf448f0>::CALLBACK_FILTER_TYPES
+# uninitialized constant #<Class:0x00007fa9a12972d0>::CALLBACK_FILTER_TYPES
 # Did you mean?  ActiveRecord::InternalMetadata::CALLBACK_FILTER_TYPES
-# uninitialized constant #<Class:0x00007fb04cf448f0>::CALL_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007fa9a12972d0>::CALL_COMPILABLE_REGEXP
 # Did you mean?  ActiveRecord::InternalMetadata::CALL_COMPILABLE_REGEXP
 # wrong constant name <Class:GeneratedAssociationMethods>
 # wrong constant name <Class:GeneratedAttributeMethods>
-# uninitialized constant #<Class:0x00007fb04cf448f0>::MAX_PASSWORD_LENGTH_ALLOWED
+# uninitialized constant #<Class:0x00007fa9a12972d0>::MAX_PASSWORD_LENGTH_ALLOWED
 # Did you mean?  ActiveRecord::InternalMetadata::MAX_PASSWORD_LENGTH_ALLOWED
-# uninitialized constant #<Class:0x00007fb04cf448f0>::NAME_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007fa9a12972d0>::NAME_COMPILABLE_REGEXP
 # Did you mean?  ActiveRecord::InternalMetadata::NAME_COMPILABLE_REGEXP
-# uninitialized constant #<Class:0x00007fb04cf448f0>::RESTRICTED_CLASS_METHODS
+# uninitialized constant #<Class:0x00007fa9a12972d0>::RESTRICTED_CLASS_METHODS
 # Did you mean?  ActiveRecord::InternalMetadata::RESTRICTED_CLASS_METHODS
-# uninitialized constant #<Class:0x00007fb04cf448f0>::UNASSIGNABLE_KEYS
+# uninitialized constant #<Class:0x00007fa9a12972d0>::UNASSIGNABLE_KEYS
 # Did you mean?  ActiveRecord::InternalMetadata::UNASSIGNABLE_KEYS
 # wrong constant name <static-init>
 # wrong constant name <static-init>
@@ -1407,8 +1407,8 @@
 # uninitialized constant ActiveRecord::SchemaMigration(version: string)::ACTIONS
 # Did you mean?  ActiveRecord::SchemaMigration::ACTIONS
 # uninitialized constant ActiveRecord::SchemaMigration(version: string)::CALLBACKS
-# Did you mean?  ActiveRecord::SchemaMigration::Callbacks
-#                ActiveRecord::Callbacks
+# Did you mean?  ActiveRecord::Callbacks
+#                ActiveRecord::SchemaMigration::Callbacks
 #                ActiveRecord::SchemaMigration::Callback
 #                ActiveRecord::SchemaMigration::CALLBACKS
 # uninitialized constant ActiveRecord::SchemaMigration(version: string)::CALLBACK_FILTER_TYPES
@@ -2360,64 +2360,58 @@
 # uninitialized constant Class::DELEGATION_RESERVED_METHOD_NAMES
 # uninitialized constant Class::RUBY_RESERVED_KEYWORDS
 # wrong constant name json_creatable?
-# uninitialized constant #<Class:0x00007fb04acef570>::ACTIONS
+# uninitialized constant #<Class:0x00007fa99d5e0198>::ACTIONS
 # Did you mean?  Company::ACTIONS
-# uninitialized constant #<Class:0x00007fb04acef570>::CALLBACKS
+# uninitialized constant #<Class:0x00007fa99d5e0198>::CALLBACKS
 # Did you mean?  Company::Callbacks
 #                Company::Callback
 #                Company::CALLBACKS
-# uninitialized constant #<Class:0x00007fb04acef570>::CALLBACK_FILTER_TYPES
+# uninitialized constant #<Class:0x00007fa99d5e0198>::CALLBACK_FILTER_TYPES
 # Did you mean?  Company::CALLBACK_FILTER_TYPES
-# uninitialized constant #<Class:0x00007fb04acef570>::CALL_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007fa99d5e0198>::CALL_COMPILABLE_REGEXP
 # Did you mean?  Company::CALL_COMPILABLE_REGEXP
 # wrong constant name <Class:GeneratedAssociationMethods>
 # wrong constant name <Class:GeneratedAttributeMethods>
-# uninitialized constant #<Class:0x00007fb04acef570>::MAX_PASSWORD_LENGTH_ALLOWED
+# uninitialized constant #<Class:0x00007fa99d5e0198>::MAX_PASSWORD_LENGTH_ALLOWED
 # Did you mean?  Company::MAX_PASSWORD_LENGTH_ALLOWED
-# uninitialized constant #<Class:0x00007fb04acef570>::NAME_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007fa99d5e0198>::NAME_COMPILABLE_REGEXP
 # Did you mean?  Company::NAME_COMPILABLE_REGEXP
-# uninitialized constant #<Class:0x00007fb04acef570>::RESTRICTED_CLASS_METHODS
+# uninitialized constant #<Class:0x00007fa99d5e0198>::RESTRICTED_CLASS_METHODS
 # Did you mean?  Company::RESTRICTED_CLASS_METHODS
-# uninitialized constant #<Class:0x00007fb04acef570>::UNASSIGNABLE_KEYS
+# uninitialized constant #<Class:0x00007fa99d5e0198>::UNASSIGNABLE_KEYS
 # Did you mean?  Company::UNASSIGNABLE_KEYS
+# wrong constant name after_add_for_tasks
+# wrong constant name after_add_for_tasks=
+# wrong constant name after_add_for_tasks?
+# wrong constant name after_remove_for_tasks
+# wrong constant name after_remove_for_tasks=
+# wrong constant name after_remove_for_tasks?
+# wrong constant name autosave_associated_records_for_tasks
+# wrong constant name before_add_for_tasks
+# wrong constant name before_add_for_tasks=
+# wrong constant name before_add_for_tasks?
+# wrong constant name before_remove_for_tasks
+# wrong constant name before_remove_for_tasks=
+# wrong constant name before_remove_for_tasks?
+# wrong constant name validate_associated_records_for_tasks
+# wrong constant name task_ids
+# wrong constant name task_ids=
+# wrong constant name tasks
+# wrong constant name tasks=
 # wrong constant name <static-init>
 # wrong constant name <static-init>
-# uninitialized constant #<Class:0x00007fb04ce11168>::ACTIONS
-# Did you mean?  CompanyTask::ACTIONS
-# uninitialized constant #<Class:0x00007fb04ce11168>::CALLBACKS
-# Did you mean?  CompanyTask::Callbacks
-#                CompanyTask::Callback
-#                CompanyTask::CALLBACKS
-# uninitialized constant #<Class:0x00007fb04ce11168>::CALLBACK_FILTER_TYPES
-# Did you mean?  CompanyTask::CALLBACK_FILTER_TYPES
-# uninitialized constant #<Class:0x00007fb04ce11168>::CALL_COMPILABLE_REGEXP
-# Did you mean?  CompanyTask::CALL_COMPILABLE_REGEXP
-# wrong constant name <Class:GeneratedAssociationMethods>
-# wrong constant name <Class:GeneratedAttributeMethods>
-# uninitialized constant #<Class:0x00007fb04ce11168>::MAX_PASSWORD_LENGTH_ALLOWED
-# Did you mean?  CompanyTask::MAX_PASSWORD_LENGTH_ALLOWED
-# uninitialized constant #<Class:0x00007fb04ce11168>::NAME_COMPILABLE_REGEXP
-# Did you mean?  CompanyTask::NAME_COMPILABLE_REGEXP
-# uninitialized constant #<Class:0x00007fb04ce11168>::RESTRICTED_CLASS_METHODS
-# Did you mean?  CompanyTask::RESTRICTED_CLASS_METHODS
-# uninitialized constant #<Class:0x00007fb04ce11168>::UNASSIGNABLE_KEYS
-# Did you mean?  CompanyTask::UNASSIGNABLE_KEYS
-# wrong constant name autosave_associated_records_for_company
-# wrong constant name autosave_associated_records_for_task
-# wrong constant name build_company
-# wrong constant name build_task
-# wrong constant name company
-# wrong constant name company=
-# wrong constant name create_company
-# wrong constant name create_company!
-# wrong constant name create_task
-# wrong constant name create_task!
-# wrong constant name reload_company
-# wrong constant name reload_task
-# wrong constant name task
-# wrong constant name task=
-# wrong constant name <static-init>
-# wrong constant name <static-init>
+# wrong constant name after_add_for_tasks
+# wrong constant name after_add_for_tasks=
+# wrong constant name after_add_for_tasks?
+# wrong constant name after_remove_for_tasks
+# wrong constant name after_remove_for_tasks=
+# wrong constant name after_remove_for_tasks?
+# wrong constant name before_add_for_tasks
+# wrong constant name before_add_for_tasks=
+# wrong constant name before_add_for_tasks?
+# wrong constant name before_remove_for_tasks
+# wrong constant name before_remove_for_tasks=
+# wrong constant name before_remove_for_tasks?
 # wrong constant name polar
 # wrong constant name rect
 # wrong constant name rectangular
@@ -5288,7 +5282,6 @@
 # wrong constant name transform_keys!
 # wrong constant name transform_values!
 # wrong constant name update
-# wrong constant name from_trusted_xml
 # uninitialized constant I18n::Backend::KeyValue::DEFAULT_REPLACEMENT_CHAR
 # uninitialized constant I18n::Backend::KeyValue::FLATTEN_SEPARATOR
 # uninitialized constant I18n::Backend::KeyValue::SEPARATOR_ESCAPE_CHAR
@@ -12179,7 +12172,7 @@
 # uninitialized constant Rails::BacktraceCleaner::FORMATTED_GEMS_PATTERN
 # wrong constant name properties
 # wrong constant name properties=
-# undefined singleton method `property<defaultArg>1' for `#<Module:0x00007fb04b7a8ac0>'
+# undefined singleton method `property<defaultArg>1' for `#<Module:0x00007fa9a11455d0>'
 # wrong constant name <static-init>
 # wrong constant name properties
 # wrong constant name properties=
@@ -12839,26 +12832,33 @@
 # wrong constant name T.noreturn
 # wrong constant name T.noreturn
 # wrong constant name T.untyped
-# uninitialized constant #<Class:0x00007fb04acddbb8>::ACTIONS
+# uninitialized constant #<Class:0x00007fa99bbcb3c0>::ACTIONS
 # Did you mean?  Task::ACTIONS
-# uninitialized constant #<Class:0x00007fb04acddbb8>::CALLBACKS
+# uninitialized constant #<Class:0x00007fa99bbcb3c0>::CALLBACKS
 # Did you mean?  Task::Callbacks
 #                Task::Callback
 #                Task::CALLBACKS
-# uninitialized constant #<Class:0x00007fb04acddbb8>::CALLBACK_FILTER_TYPES
+# uninitialized constant #<Class:0x00007fa99bbcb3c0>::CALLBACK_FILTER_TYPES
 # Did you mean?  Task::CALLBACK_FILTER_TYPES
-# uninitialized constant #<Class:0x00007fb04acddbb8>::CALL_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007fa99bbcb3c0>::CALL_COMPILABLE_REGEXP
 # Did you mean?  Task::CALL_COMPILABLE_REGEXP
 # wrong constant name <Class:GeneratedAssociationMethods>
 # wrong constant name <Class:GeneratedAttributeMethods>
-# uninitialized constant #<Class:0x00007fb04acddbb8>::MAX_PASSWORD_LENGTH_ALLOWED
+# uninitialized constant #<Class:0x00007fa99bbcb3c0>::MAX_PASSWORD_LENGTH_ALLOWED
 # Did you mean?  Task::MAX_PASSWORD_LENGTH_ALLOWED
-# uninitialized constant #<Class:0x00007fb04acddbb8>::NAME_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007fa99bbcb3c0>::NAME_COMPILABLE_REGEXP
 # Did you mean?  Task::NAME_COMPILABLE_REGEXP
-# uninitialized constant #<Class:0x00007fb04acddbb8>::RESTRICTED_CLASS_METHODS
+# uninitialized constant #<Class:0x00007fa99bbcb3c0>::RESTRICTED_CLASS_METHODS
 # Did you mean?  Task::RESTRICTED_CLASS_METHODS
-# uninitialized constant #<Class:0x00007fb04acddbb8>::UNASSIGNABLE_KEYS
+# uninitialized constant #<Class:0x00007fa99bbcb3c0>::UNASSIGNABLE_KEYS
 # Did you mean?  Task::UNASSIGNABLE_KEYS
+# wrong constant name autosave_associated_records_for_company
+# wrong constant name build_company
+# wrong constant name company
+# wrong constant name company=
+# wrong constant name create_company
+# wrong constant name create_company!
+# wrong constant name reload_company
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name <Class:Remover>
@@ -13214,8 +13214,8 @@
 # uninitialized constant WebSocket::Driver::Client::OPENING_OPCODES
 # uninitialized constant WebSocket::Driver::Client::PACK_FORMATS
 # uninitialized constant WebSocket::Driver::Client::RSV1
-# Did you mean?  WebSocket::Driver::Client::RSV3
-#                WebSocket::Driver::Client::RSV2
+# Did you mean?  WebSocket::Driver::Client::RSV2
+#                WebSocket::Driver::Client::RSV3
 # uninitialized constant WebSocket::Driver::Client::RSV2
 # Did you mean?  WebSocket::Driver::Client::RSV3
 #                WebSocket::Driver::Client::RSV1
