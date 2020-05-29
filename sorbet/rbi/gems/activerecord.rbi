@@ -5548,19 +5548,6 @@ class ActiveRecord::AssociationRelation < ActiveRecord::Relation
   def new(attributes = nil, &block); end
   def proxy_association; end
 end
-class ActiveRecord::Associations::Builder::CollectionAssociation < ActiveRecord::Associations::Builder::Association
-  def self.define_callback(model, callback_name, name, options); end
-  def self.define_callbacks(model, reflection); end
-  def self.define_extensions(model, name, &block); end
-  def self.define_readers(mixin, name); end
-  def self.define_writers(mixin, name); end
-  def self.valid_options(options); end
-end
-class ActiveRecord::Associations::Builder::HasMany < ActiveRecord::Associations::Builder::CollectionAssociation
-  def self.macro; end
-  def self.valid_dependent_options; end
-  def self.valid_options(options); end
-end
 class ActiveRecord::Associations::Builder::SingularAssociation < ActiveRecord::Associations::Builder::Association
   def self.define_accessors(model, reflection); end
   def self.define_constructors(mixin, name); end
@@ -5575,6 +5562,19 @@ class ActiveRecord::Associations::Builder::BelongsTo < ActiveRecord::Association
   def self.define_validations(model, reflection); end
   def self.macro; end
   def self.touch_record(o, changes, foreign_key, name, touch, touch_method); end
+  def self.valid_dependent_options; end
+  def self.valid_options(options); end
+end
+class ActiveRecord::Associations::Builder::CollectionAssociation < ActiveRecord::Associations::Builder::Association
+  def self.define_callback(model, callback_name, name, options); end
+  def self.define_callbacks(model, reflection); end
+  def self.define_extensions(model, name, &block); end
+  def self.define_readers(mixin, name); end
+  def self.define_writers(mixin, name); end
+  def self.valid_options(options); end
+end
+class ActiveRecord::Associations::Builder::HasMany < ActiveRecord::Associations::Builder::CollectionAssociation
+  def self.macro; end
   def self.valid_dependent_options; end
   def self.valid_options(options); end
 end

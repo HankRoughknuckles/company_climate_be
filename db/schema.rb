@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_29_104629) do
+ActiveRecord::Schema.define(version: 2020_05_29_122231) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,17 @@ ActiveRecord::Schema.define(version: 2020_05_29_104629) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["name"], name: "index_companies_on_name", unique: true
+  end
+
+  create_table "company_years", force: :cascade do |t|
+    t.bigint "company_id", null: false
+    t.bigint "year_id", null: false
+    t.integer "co2_produced", default: 0
+    t.integer "co2_captured", default: 0
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["company_id"], name: "index_company_years_on_company_id"
+    t.index ["year_id"], name: "index_company_years_on_year_id"
   end
 
   create_table "tasks", force: :cascade do |t|
@@ -34,5 +45,14 @@ ActiveRecord::Schema.define(version: 2020_05_29_104629) do
     t.index ["name"], name: "index_tasks_on_name"
   end
 
+  create_table "years", force: :cascade do |t|
+    t.integer "name", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["name"], name: "index_years_on_name"
+  end
+
+  add_foreign_key "company_years", "companies"
+  add_foreign_key "company_years", "years"
   add_foreign_key "tasks", "companies"
 end
