@@ -1036,8 +1036,8 @@
 # uninitialized constant ActiveRecord::AdvisoryLockBase(abstract)::ACTIONS
 # Did you mean?  ActiveRecord::AdvisoryLockBase::ACTIONS
 # uninitialized constant ActiveRecord::AdvisoryLockBase(abstract)::CALLBACKS
-# Did you mean?  ActiveRecord::AdvisoryLockBase::Callbacks
-#                ActiveRecord::Callbacks
+# Did you mean?  ActiveRecord::Callbacks
+#                ActiveRecord::AdvisoryLockBase::Callbacks
 #                ActiveRecord::AdvisoryLockBase::Callback
 #                ActiveRecord::AdvisoryLockBase::CALLBACKS
 # uninitialized constant ActiveRecord::AdvisoryLockBase(abstract)::CALLBACK_FILTER_TYPES
@@ -1143,26 +1143,26 @@
 # wrong constant name rolledback?
 # wrong constant name <static-init>
 # wrong constant name collect?
-# uninitialized constant #<Class:0x00007ff088259358>::ACTIONS
+# uninitialized constant #<Class:0x00007fa9a12972d0>::ACTIONS
 # Did you mean?  ActiveRecord::InternalMetadata::ACTIONS
-# uninitialized constant #<Class:0x00007ff088259358>::CALLBACKS
-# Did you mean?  ActiveRecord::InternalMetadata::Callbacks
-#                ActiveRecord::Callbacks
+# uninitialized constant #<Class:0x00007fa9a12972d0>::CALLBACKS
+# Did you mean?  ActiveRecord::Callbacks
+#                ActiveRecord::InternalMetadata::Callbacks
 #                ActiveRecord::InternalMetadata::Callback
 #                ActiveRecord::InternalMetadata::CALLBACKS
-# uninitialized constant #<Class:0x00007ff088259358>::CALLBACK_FILTER_TYPES
+# uninitialized constant #<Class:0x00007fa9a12972d0>::CALLBACK_FILTER_TYPES
 # Did you mean?  ActiveRecord::InternalMetadata::CALLBACK_FILTER_TYPES
-# uninitialized constant #<Class:0x00007ff088259358>::CALL_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007fa9a12972d0>::CALL_COMPILABLE_REGEXP
 # Did you mean?  ActiveRecord::InternalMetadata::CALL_COMPILABLE_REGEXP
 # wrong constant name <Class:GeneratedAssociationMethods>
 # wrong constant name <Class:GeneratedAttributeMethods>
-# uninitialized constant #<Class:0x00007ff088259358>::MAX_PASSWORD_LENGTH_ALLOWED
+# uninitialized constant #<Class:0x00007fa9a12972d0>::MAX_PASSWORD_LENGTH_ALLOWED
 # Did you mean?  ActiveRecord::InternalMetadata::MAX_PASSWORD_LENGTH_ALLOWED
-# uninitialized constant #<Class:0x00007ff088259358>::NAME_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007fa9a12972d0>::NAME_COMPILABLE_REGEXP
 # Did you mean?  ActiveRecord::InternalMetadata::NAME_COMPILABLE_REGEXP
-# uninitialized constant #<Class:0x00007ff088259358>::RESTRICTED_CLASS_METHODS
+# uninitialized constant #<Class:0x00007fa9a12972d0>::RESTRICTED_CLASS_METHODS
 # Did you mean?  ActiveRecord::InternalMetadata::RESTRICTED_CLASS_METHODS
-# uninitialized constant #<Class:0x00007ff088259358>::UNASSIGNABLE_KEYS
+# uninitialized constant #<Class:0x00007fa9a12972d0>::UNASSIGNABLE_KEYS
 # Did you mean?  ActiveRecord::InternalMetadata::UNASSIGNABLE_KEYS
 # wrong constant name <static-init>
 # wrong constant name <static-init>
@@ -1407,8 +1407,8 @@
 # uninitialized constant ActiveRecord::SchemaMigration(version: string)::ACTIONS
 # Did you mean?  ActiveRecord::SchemaMigration::ACTIONS
 # uninitialized constant ActiveRecord::SchemaMigration(version: string)::CALLBACKS
-# Did you mean?  ActiveRecord::SchemaMigration::Callbacks
-#                ActiveRecord::Callbacks
+# Did you mean?  ActiveRecord::Callbacks
+#                ActiveRecord::SchemaMigration::Callbacks
 #                ActiveRecord::SchemaMigration::Callback
 #                ActiveRecord::SchemaMigration::CALLBACKS
 # uninitialized constant ActiveRecord::SchemaMigration(version: string)::CALLBACK_FILTER_TYPES
@@ -2360,28 +2360,58 @@
 # uninitialized constant Class::DELEGATION_RESERVED_METHOD_NAMES
 # uninitialized constant Class::RUBY_RESERVED_KEYWORDS
 # wrong constant name json_creatable?
-# uninitialized constant #<Class:0x00007ff082e41798>::ACTIONS
+# uninitialized constant #<Class:0x00007fa99d5e0198>::ACTIONS
 # Did you mean?  Company::ACTIONS
-# uninitialized constant #<Class:0x00007ff082e41798>::CALLBACKS
+# uninitialized constant #<Class:0x00007fa99d5e0198>::CALLBACKS
 # Did you mean?  Company::Callbacks
 #                Company::Callback
 #                Company::CALLBACKS
-# uninitialized constant #<Class:0x00007ff082e41798>::CALLBACK_FILTER_TYPES
+# uninitialized constant #<Class:0x00007fa99d5e0198>::CALLBACK_FILTER_TYPES
 # Did you mean?  Company::CALLBACK_FILTER_TYPES
-# uninitialized constant #<Class:0x00007ff082e41798>::CALL_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007fa99d5e0198>::CALL_COMPILABLE_REGEXP
 # Did you mean?  Company::CALL_COMPILABLE_REGEXP
 # wrong constant name <Class:GeneratedAssociationMethods>
 # wrong constant name <Class:GeneratedAttributeMethods>
-# uninitialized constant #<Class:0x00007ff082e41798>::MAX_PASSWORD_LENGTH_ALLOWED
+# uninitialized constant #<Class:0x00007fa99d5e0198>::MAX_PASSWORD_LENGTH_ALLOWED
 # Did you mean?  Company::MAX_PASSWORD_LENGTH_ALLOWED
-# uninitialized constant #<Class:0x00007ff082e41798>::NAME_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007fa99d5e0198>::NAME_COMPILABLE_REGEXP
 # Did you mean?  Company::NAME_COMPILABLE_REGEXP
-# uninitialized constant #<Class:0x00007ff082e41798>::RESTRICTED_CLASS_METHODS
+# uninitialized constant #<Class:0x00007fa99d5e0198>::RESTRICTED_CLASS_METHODS
 # Did you mean?  Company::RESTRICTED_CLASS_METHODS
-# uninitialized constant #<Class:0x00007ff082e41798>::UNASSIGNABLE_KEYS
+# uninitialized constant #<Class:0x00007fa99d5e0198>::UNASSIGNABLE_KEYS
 # Did you mean?  Company::UNASSIGNABLE_KEYS
+# wrong constant name after_add_for_tasks
+# wrong constant name after_add_for_tasks=
+# wrong constant name after_add_for_tasks?
+# wrong constant name after_remove_for_tasks
+# wrong constant name after_remove_for_tasks=
+# wrong constant name after_remove_for_tasks?
+# wrong constant name autosave_associated_records_for_tasks
+# wrong constant name before_add_for_tasks
+# wrong constant name before_add_for_tasks=
+# wrong constant name before_add_for_tasks?
+# wrong constant name before_remove_for_tasks
+# wrong constant name before_remove_for_tasks=
+# wrong constant name before_remove_for_tasks?
+# wrong constant name validate_associated_records_for_tasks
+# wrong constant name task_ids
+# wrong constant name task_ids=
+# wrong constant name tasks
+# wrong constant name tasks=
 # wrong constant name <static-init>
 # wrong constant name <static-init>
+# wrong constant name after_add_for_tasks
+# wrong constant name after_add_for_tasks=
+# wrong constant name after_add_for_tasks?
+# wrong constant name after_remove_for_tasks
+# wrong constant name after_remove_for_tasks=
+# wrong constant name after_remove_for_tasks?
+# wrong constant name before_add_for_tasks
+# wrong constant name before_add_for_tasks=
+# wrong constant name before_add_for_tasks?
+# wrong constant name before_remove_for_tasks
+# wrong constant name before_remove_for_tasks=
+# wrong constant name before_remove_for_tasks?
 # wrong constant name polar
 # wrong constant name rect
 # wrong constant name rectangular
@@ -5252,7 +5282,6 @@
 # wrong constant name transform_keys!
 # wrong constant name transform_values!
 # wrong constant name update
-# wrong constant name from_trusted_xml
 # uninitialized constant I18n::Backend::KeyValue::DEFAULT_REPLACEMENT_CHAR
 # uninitialized constant I18n::Backend::KeyValue::FLATTEN_SEPARATOR
 # uninitialized constant I18n::Backend::KeyValue::SEPARATOR_ESCAPE_CHAR
@@ -11116,12 +11145,12 @@
 # Did you mean?  Puma::Binder::HTTP_X_FORWARDED_SSL
 #                Puma::Binder::HTTP_X_FORWARDED_PROTO
 # uninitialized constant Puma::Binder::HTTP_X_FORWARDED_PROTO
-# Did you mean?  Puma::Binder::HTTP_X_FORWARDED_FOR
-#                Puma::Binder::HTTP_X_FORWARDED_SSL
+# Did you mean?  Puma::Binder::HTTP_X_FORWARDED_SSL
+#                Puma::Binder::HTTP_X_FORWARDED_FOR
 #                Puma::Binder::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Puma::Binder::HTTP_X_FORWARDED_SCHEME
-# Did you mean?  Puma::Binder::HTTP_X_FORWARDED_FOR
-#                Puma::Binder::HTTP_X_FORWARDED_SSL
+# Did you mean?  Puma::Binder::HTTP_X_FORWARDED_SSL
+#                Puma::Binder::HTTP_X_FORWARDED_FOR
 #                Puma::Binder::HTTP_X_FORWARDED_PROTO
 # uninitialized constant Puma::Binder::HTTP_X_FORWARDED_SSL
 # Did you mean?  Puma::Binder::HTTP_X_FORWARDED_FOR
@@ -11223,12 +11252,12 @@
 # Did you mean?  Puma::Client::HTTP_X_FORWARDED_SSL
 #                Puma::Client::HTTP_X_FORWARDED_PROTO
 # uninitialized constant Puma::Client::HTTP_X_FORWARDED_PROTO
-# Did you mean?  Puma::Client::HTTP_X_FORWARDED_FOR
-#                Puma::Client::HTTP_X_FORWARDED_SSL
+# Did you mean?  Puma::Client::HTTP_X_FORWARDED_SSL
+#                Puma::Client::HTTP_X_FORWARDED_FOR
 #                Puma::Client::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Puma::Client::HTTP_X_FORWARDED_SCHEME
-# Did you mean?  Puma::Client::HTTP_X_FORWARDED_FOR
-#                Puma::Client::HTTP_X_FORWARDED_SSL
+# Did you mean?  Puma::Client::HTTP_X_FORWARDED_SSL
+#                Puma::Client::HTTP_X_FORWARDED_FOR
 #                Puma::Client::HTTP_X_FORWARDED_PROTO
 # uninitialized constant Puma::Client::HTTP_X_FORWARDED_SSL
 # Did you mean?  Puma::Client::HTTP_X_FORWARDED_FOR
@@ -11330,12 +11359,12 @@
 # Did you mean?  Puma::Events::HTTP_X_FORWARDED_SSL
 #                Puma::Events::HTTP_X_FORWARDED_PROTO
 # uninitialized constant Puma::Events::HTTP_X_FORWARDED_PROTO
-# Did you mean?  Puma::Events::HTTP_X_FORWARDED_FOR
-#                Puma::Events::HTTP_X_FORWARDED_SSL
+# Did you mean?  Puma::Events::HTTP_X_FORWARDED_SSL
+#                Puma::Events::HTTP_X_FORWARDED_FOR
 #                Puma::Events::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Puma::Events::HTTP_X_FORWARDED_SCHEME
-# Did you mean?  Puma::Events::HTTP_X_FORWARDED_FOR
-#                Puma::Events::HTTP_X_FORWARDED_SSL
+# Did you mean?  Puma::Events::HTTP_X_FORWARDED_SSL
+#                Puma::Events::HTTP_X_FORWARDED_FOR
 #                Puma::Events::HTTP_X_FORWARDED_PROTO
 # uninitialized constant Puma::Events::HTTP_X_FORWARDED_SSL
 # Did you mean?  Puma::Events::HTTP_X_FORWARDED_FOR
@@ -11440,12 +11469,12 @@
 # Did you mean?  Puma::Server::HTTP_X_FORWARDED_SSL
 #                Puma::Server::HTTP_X_FORWARDED_PROTO
 # uninitialized constant Puma::Server::HTTP_X_FORWARDED_PROTO
-# Did you mean?  Puma::Server::HTTP_X_FORWARDED_FOR
-#                Puma::Server::HTTP_X_FORWARDED_SSL
+# Did you mean?  Puma::Server::HTTP_X_FORWARDED_SSL
+#                Puma::Server::HTTP_X_FORWARDED_FOR
 #                Puma::Server::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Puma::Server::HTTP_X_FORWARDED_SCHEME
-# Did you mean?  Puma::Server::HTTP_X_FORWARDED_FOR
-#                Puma::Server::HTTP_X_FORWARDED_SSL
+# Did you mean?  Puma::Server::HTTP_X_FORWARDED_SSL
+#                Puma::Server::HTTP_X_FORWARDED_FOR
 #                Puma::Server::HTTP_X_FORWARDED_PROTO
 # uninitialized constant Puma::Server::HTTP_X_FORWARDED_SSL
 # Did you mean?  Puma::Server::HTTP_X_FORWARDED_FOR
@@ -12143,7 +12172,7 @@
 # uninitialized constant Rails::BacktraceCleaner::FORMATTED_GEMS_PATTERN
 # wrong constant name properties
 # wrong constant name properties=
-# undefined singleton method `property<defaultArg>1' for `#<Module:0x00007ff0806466a8>'
+# undefined singleton method `property<defaultArg>1' for `#<Module:0x00007fa9a11455d0>'
 # wrong constant name <static-init>
 # wrong constant name properties
 # wrong constant name properties=
@@ -12695,6 +12724,8 @@
 # wrong constant name reset
 # uninitialized constant Shell
 # uninitialized constant Shell
+# uninitialized constant Shoulda::Matchers::Text::BLANK_RE
+# uninitialized constant Shoulda::Matchers::Text::ENCODED_BLANKS
 # wrong constant name signm
 # wrong constant name signo
 # undefined method `_dump<defaultArg>1' for module `Singleton'
@@ -12801,6 +12832,35 @@
 # wrong constant name T.noreturn
 # wrong constant name T.noreturn
 # wrong constant name T.untyped
+# uninitialized constant #<Class:0x00007fa99bbcb3c0>::ACTIONS
+# Did you mean?  Task::ACTIONS
+# uninitialized constant #<Class:0x00007fa99bbcb3c0>::CALLBACKS
+# Did you mean?  Task::Callbacks
+#                Task::Callback
+#                Task::CALLBACKS
+# uninitialized constant #<Class:0x00007fa99bbcb3c0>::CALLBACK_FILTER_TYPES
+# Did you mean?  Task::CALLBACK_FILTER_TYPES
+# uninitialized constant #<Class:0x00007fa99bbcb3c0>::CALL_COMPILABLE_REGEXP
+# Did you mean?  Task::CALL_COMPILABLE_REGEXP
+# wrong constant name <Class:GeneratedAssociationMethods>
+# wrong constant name <Class:GeneratedAttributeMethods>
+# uninitialized constant #<Class:0x00007fa99bbcb3c0>::MAX_PASSWORD_LENGTH_ALLOWED
+# Did you mean?  Task::MAX_PASSWORD_LENGTH_ALLOWED
+# uninitialized constant #<Class:0x00007fa99bbcb3c0>::NAME_COMPILABLE_REGEXP
+# Did you mean?  Task::NAME_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007fa99bbcb3c0>::RESTRICTED_CLASS_METHODS
+# Did you mean?  Task::RESTRICTED_CLASS_METHODS
+# uninitialized constant #<Class:0x00007fa99bbcb3c0>::UNASSIGNABLE_KEYS
+# Did you mean?  Task::UNASSIGNABLE_KEYS
+# wrong constant name autosave_associated_records_for_company
+# wrong constant name build_company
+# wrong constant name company
+# wrong constant name company=
+# wrong constant name create_company
+# wrong constant name create_company!
+# wrong constant name reload_company
+# wrong constant name <static-init>
+# wrong constant name <static-init>
 # wrong constant name <Class:Remover>
 # wrong constant name _close
 # wrong constant name inspect
@@ -13154,8 +13214,8 @@
 # uninitialized constant WebSocket::Driver::Client::OPENING_OPCODES
 # uninitialized constant WebSocket::Driver::Client::PACK_FORMATS
 # uninitialized constant WebSocket::Driver::Client::RSV1
-# Did you mean?  WebSocket::Driver::Client::RSV3
-#                WebSocket::Driver::Client::RSV2
+# Did you mean?  WebSocket::Driver::Client::RSV2
+#                WebSocket::Driver::Client::RSV3
 # uninitialized constant WebSocket::Driver::Client::RSV2
 # Did you mean?  WebSocket::Driver::Client::RSV3
 #                WebSocket::Driver::Client::RSV1
