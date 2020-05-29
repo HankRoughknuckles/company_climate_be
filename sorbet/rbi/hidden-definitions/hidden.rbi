@@ -3828,11 +3828,29 @@ end
 class Company
   include ::Company::GeneratedAttributeMethods
   include ::Company::GeneratedAssociationMethods
+  def after_add_for_company_years(); end
+
+  def after_add_for_company_years=(val); end
+
+  def after_add_for_company_years?(); end
+
   def after_add_for_tasks(); end
 
   def after_add_for_tasks=(val); end
 
   def after_add_for_tasks?(); end
+
+  def after_add_for_years(); end
+
+  def after_add_for_years=(val); end
+
+  def after_add_for_years?(); end
+
+  def after_remove_for_company_years(); end
+
+  def after_remove_for_company_years=(val); end
+
+  def after_remove_for_company_years?(); end
 
   def after_remove_for_tasks(); end
 
@@ -3840,7 +3858,23 @@ class Company
 
   def after_remove_for_tasks?(); end
 
+  def after_remove_for_years(); end
+
+  def after_remove_for_years=(val); end
+
+  def after_remove_for_years?(); end
+
+  def autosave_associated_records_for_company_years(*args); end
+
   def autosave_associated_records_for_tasks(*args); end
+
+  def autosave_associated_records_for_years(*args); end
+
+  def before_add_for_company_years(); end
+
+  def before_add_for_company_years=(val); end
+
+  def before_add_for_company_years?(); end
 
   def before_add_for_tasks(); end
 
@@ -3848,16 +3882,46 @@ class Company
 
   def before_add_for_tasks?(); end
 
+  def before_add_for_years(); end
+
+  def before_add_for_years=(val); end
+
+  def before_add_for_years?(); end
+
+  def before_remove_for_company_years(); end
+
+  def before_remove_for_company_years=(val); end
+
+  def before_remove_for_company_years?(); end
+
   def before_remove_for_tasks(); end
 
   def before_remove_for_tasks=(val); end
 
   def before_remove_for_tasks?(); end
 
+  def before_remove_for_years(); end
+
+  def before_remove_for_years=(val); end
+
+  def before_remove_for_years?(); end
+
+  def validate_associated_records_for_company_years(*args); end
+
   def validate_associated_records_for_tasks(*args); end
+
+  def validate_associated_records_for_years(*args); end
 end
 
 module Company::GeneratedAssociationMethods
+  def company_year_ids(); end
+
+  def company_year_ids=(ids); end
+
+  def company_years(); end
+
+  def company_years=(value); end
+
   def task_ids(); end
 
   def task_ids=(ids); end
@@ -3865,6 +3929,14 @@ module Company::GeneratedAssociationMethods
   def tasks(); end
 
   def tasks=(value); end
+
+  def year_ids(); end
+
+  def year_ids=(ids); end
+
+  def years(); end
+
+  def years=(value); end
 end
 
 module Company::GeneratedAssociationMethods
@@ -3878,11 +3950,31 @@ module Company::GeneratedAttributeMethods
 end
 
 class Company
+  extend ::T::Private::Methods::MethodHooks
+  extend ::T::Private::Methods::SingletonMethodHooks
+  def self.after_add_for_company_years(); end
+
+  def self.after_add_for_company_years=(val); end
+
+  def self.after_add_for_company_years?(); end
+
   def self.after_add_for_tasks(); end
 
   def self.after_add_for_tasks=(val); end
 
   def self.after_add_for_tasks?(); end
+
+  def self.after_add_for_years(); end
+
+  def self.after_add_for_years=(val); end
+
+  def self.after_add_for_years?(); end
+
+  def self.after_remove_for_company_years(); end
+
+  def self.after_remove_for_company_years=(val); end
+
+  def self.after_remove_for_company_years?(); end
 
   def self.after_remove_for_tasks(); end
 
@@ -3890,17 +3982,91 @@ class Company
 
   def self.after_remove_for_tasks?(); end
 
+  def self.after_remove_for_years(); end
+
+  def self.after_remove_for_years=(val); end
+
+  def self.after_remove_for_years?(); end
+
+  def self.before_add_for_company_years(); end
+
+  def self.before_add_for_company_years=(val); end
+
+  def self.before_add_for_company_years?(); end
+
   def self.before_add_for_tasks(); end
 
   def self.before_add_for_tasks=(val); end
 
   def self.before_add_for_tasks?(); end
 
+  def self.before_add_for_years(); end
+
+  def self.before_add_for_years=(val); end
+
+  def self.before_add_for_years?(); end
+
+  def self.before_remove_for_company_years(); end
+
+  def self.before_remove_for_company_years=(val); end
+
+  def self.before_remove_for_company_years?(); end
+
   def self.before_remove_for_tasks(); end
 
   def self.before_remove_for_tasks=(val); end
 
   def self.before_remove_for_tasks?(); end
+
+  def self.before_remove_for_years(); end
+
+  def self.before_remove_for_years=(val); end
+
+  def self.before_remove_for_years?(); end
+end
+
+class CompanyYear
+  include ::CompanyYear::GeneratedAttributeMethods
+  include ::CompanyYear::GeneratedAssociationMethods
+  def autosave_associated_records_for_company(*args); end
+
+  def autosave_associated_records_for_year(*args); end
+end
+
+module CompanyYear::GeneratedAssociationMethods
+  def build_company(*args, &block); end
+
+  def build_year(*args, &block); end
+
+  def company(); end
+
+  def company=(value); end
+
+  def create_company(*args, &block); end
+
+  def create_company!(*args, &block); end
+
+  def create_year(*args, &block); end
+
+  def create_year!(*args, &block); end
+
+  def reload_company(); end
+
+  def reload_year(); end
+
+  def year(); end
+
+  def year=(value); end
+end
+
+module CompanyYear::GeneratedAssociationMethods
+end
+
+module CompanyYear::GeneratedAttributeMethods
+end
+
+module CompanyYear::GeneratedAttributeMethods
+  extend ::Mutex_m
 end
 
 class Complex
@@ -10787,13 +10953,7 @@ Net::HTTPResponceReceiver = Net::HTTPResponse
 
 Net::HTTPRetriableCode = Net::HTTPRedirection
 
-class Net::HTTPServerError
-end
-
-Net::HTTPServerErrorCode::EXCEPTION_TYPE = Net::HTTPFatalError
-
-class Net::HTTPServerError
-end
+Net::HTTPServerErrorCode = Net::HTTPServerError
 
 class Net::HTTP
 end
@@ -18190,6 +18350,24 @@ module Psych::Visitors
 end
 
 module Psych
+end
+
+class Year
+  include ::Year::GeneratedAttributeMethods
+  include ::Year::GeneratedAssociationMethods
+end
+
+module Year::GeneratedAssociationMethods
+end
+
+module Year::GeneratedAssociationMethods
+end
+
+module Year::GeneratedAttributeMethods
+end
+
+module Year::GeneratedAttributeMethods
+  extend ::Mutex_m
 end
 
 module Zeitwerk::ExplicitNamespace

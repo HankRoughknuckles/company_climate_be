@@ -1143,26 +1143,26 @@
 # wrong constant name rolledback?
 # wrong constant name <static-init>
 # wrong constant name collect?
-# uninitialized constant #<Class:0x00007fa9a12972d0>::ACTIONS
+# uninitialized constant #<Class:0x00007f8716e4f9e0>::ACTIONS
 # Did you mean?  ActiveRecord::InternalMetadata::ACTIONS
-# uninitialized constant #<Class:0x00007fa9a12972d0>::CALLBACKS
+# uninitialized constant #<Class:0x00007f8716e4f9e0>::CALLBACKS
 # Did you mean?  ActiveRecord::Callbacks
 #                ActiveRecord::InternalMetadata::Callbacks
 #                ActiveRecord::InternalMetadata::Callback
 #                ActiveRecord::InternalMetadata::CALLBACKS
-# uninitialized constant #<Class:0x00007fa9a12972d0>::CALLBACK_FILTER_TYPES
+# uninitialized constant #<Class:0x00007f8716e4f9e0>::CALLBACK_FILTER_TYPES
 # Did you mean?  ActiveRecord::InternalMetadata::CALLBACK_FILTER_TYPES
-# uninitialized constant #<Class:0x00007fa9a12972d0>::CALL_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007f8716e4f9e0>::CALL_COMPILABLE_REGEXP
 # Did you mean?  ActiveRecord::InternalMetadata::CALL_COMPILABLE_REGEXP
 # wrong constant name <Class:GeneratedAssociationMethods>
 # wrong constant name <Class:GeneratedAttributeMethods>
-# uninitialized constant #<Class:0x00007fa9a12972d0>::MAX_PASSWORD_LENGTH_ALLOWED
+# uninitialized constant #<Class:0x00007f8716e4f9e0>::MAX_PASSWORD_LENGTH_ALLOWED
 # Did you mean?  ActiveRecord::InternalMetadata::MAX_PASSWORD_LENGTH_ALLOWED
-# uninitialized constant #<Class:0x00007fa9a12972d0>::NAME_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007f8716e4f9e0>::NAME_COMPILABLE_REGEXP
 # Did you mean?  ActiveRecord::InternalMetadata::NAME_COMPILABLE_REGEXP
-# uninitialized constant #<Class:0x00007fa9a12972d0>::RESTRICTED_CLASS_METHODS
+# uninitialized constant #<Class:0x00007f8716e4f9e0>::RESTRICTED_CLASS_METHODS
 # Did you mean?  ActiveRecord::InternalMetadata::RESTRICTED_CLASS_METHODS
-# uninitialized constant #<Class:0x00007fa9a12972d0>::UNASSIGNABLE_KEYS
+# uninitialized constant #<Class:0x00007f8716e4f9e0>::UNASSIGNABLE_KEYS
 # Did you mean?  ActiveRecord::InternalMetadata::UNASSIGNABLE_KEYS
 # wrong constant name <static-init>
 # wrong constant name <static-init>
@@ -2360,58 +2360,154 @@
 # uninitialized constant Class::DELEGATION_RESERVED_METHOD_NAMES
 # uninitialized constant Class::RUBY_RESERVED_KEYWORDS
 # wrong constant name json_creatable?
-# uninitialized constant #<Class:0x00007fa99d5e0198>::ACTIONS
+# uninitialized constant #<Class:0x00007f87166d4170>::ACTIONS
 # Did you mean?  Company::ACTIONS
-# uninitialized constant #<Class:0x00007fa99d5e0198>::CALLBACKS
+# uninitialized constant #<Class:0x00007f87166d4170>::CALLBACKS
 # Did you mean?  Company::Callbacks
 #                Company::Callback
 #                Company::CALLBACKS
-# uninitialized constant #<Class:0x00007fa99d5e0198>::CALLBACK_FILTER_TYPES
+# uninitialized constant #<Class:0x00007f87166d4170>::CALLBACK_FILTER_TYPES
 # Did you mean?  Company::CALLBACK_FILTER_TYPES
-# uninitialized constant #<Class:0x00007fa99d5e0198>::CALL_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007f87166d4170>::CALL_COMPILABLE_REGEXP
 # Did you mean?  Company::CALL_COMPILABLE_REGEXP
 # wrong constant name <Class:GeneratedAssociationMethods>
 # wrong constant name <Class:GeneratedAttributeMethods>
-# uninitialized constant #<Class:0x00007fa99d5e0198>::MAX_PASSWORD_LENGTH_ALLOWED
+# uninitialized constant #<Class:0x00007f87166d4170>::MAX_PASSWORD_LENGTH_ALLOWED
 # Did you mean?  Company::MAX_PASSWORD_LENGTH_ALLOWED
-# uninitialized constant #<Class:0x00007fa99d5e0198>::NAME_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007f87166d4170>::NAME_COMPILABLE_REGEXP
 # Did you mean?  Company::NAME_COMPILABLE_REGEXP
-# uninitialized constant #<Class:0x00007fa99d5e0198>::RESTRICTED_CLASS_METHODS
+# uninitialized constant #<Class:0x00007f87166d4170>::RESTRICTED_CLASS_METHODS
 # Did you mean?  Company::RESTRICTED_CLASS_METHODS
-# uninitialized constant #<Class:0x00007fa99d5e0198>::UNASSIGNABLE_KEYS
+# uninitialized constant #<Class:0x00007f87166d4170>::UNASSIGNABLE_KEYS
 # Did you mean?  Company::UNASSIGNABLE_KEYS
+# wrong constant name after_add_for_company_years
+# wrong constant name after_add_for_company_years=
+# wrong constant name after_add_for_company_years?
 # wrong constant name after_add_for_tasks
 # wrong constant name after_add_for_tasks=
 # wrong constant name after_add_for_tasks?
+# wrong constant name after_add_for_years
+# wrong constant name after_add_for_years=
+# wrong constant name after_add_for_years?
+# wrong constant name after_remove_for_company_years
+# wrong constant name after_remove_for_company_years=
+# wrong constant name after_remove_for_company_years?
 # wrong constant name after_remove_for_tasks
 # wrong constant name after_remove_for_tasks=
 # wrong constant name after_remove_for_tasks?
+# wrong constant name after_remove_for_years
+# wrong constant name after_remove_for_years=
+# wrong constant name after_remove_for_years?
+# wrong constant name autosave_associated_records_for_company_years
 # wrong constant name autosave_associated_records_for_tasks
+# wrong constant name autosave_associated_records_for_years
+# wrong constant name before_add_for_company_years
+# wrong constant name before_add_for_company_years=
+# wrong constant name before_add_for_company_years?
 # wrong constant name before_add_for_tasks
 # wrong constant name before_add_for_tasks=
 # wrong constant name before_add_for_tasks?
+# wrong constant name before_add_for_years
+# wrong constant name before_add_for_years=
+# wrong constant name before_add_for_years?
+# wrong constant name before_remove_for_company_years
+# wrong constant name before_remove_for_company_years=
+# wrong constant name before_remove_for_company_years?
 # wrong constant name before_remove_for_tasks
 # wrong constant name before_remove_for_tasks=
 # wrong constant name before_remove_for_tasks?
+# wrong constant name before_remove_for_years
+# wrong constant name before_remove_for_years=
+# wrong constant name before_remove_for_years?
+# wrong constant name validate_associated_records_for_company_years
 # wrong constant name validate_associated_records_for_tasks
+# wrong constant name validate_associated_records_for_years
+# wrong constant name company_year_ids
+# wrong constant name company_year_ids=
+# wrong constant name company_years
+# wrong constant name company_years=
 # wrong constant name task_ids
 # wrong constant name task_ids=
 # wrong constant name tasks
 # wrong constant name tasks=
+# wrong constant name year_ids
+# wrong constant name year_ids=
+# wrong constant name years
+# wrong constant name years=
 # wrong constant name <static-init>
 # wrong constant name <static-init>
+# wrong constant name after_add_for_company_years
+# wrong constant name after_add_for_company_years=
+# wrong constant name after_add_for_company_years?
 # wrong constant name after_add_for_tasks
 # wrong constant name after_add_for_tasks=
 # wrong constant name after_add_for_tasks?
+# wrong constant name after_add_for_years
+# wrong constant name after_add_for_years=
+# wrong constant name after_add_for_years?
+# wrong constant name after_remove_for_company_years
+# wrong constant name after_remove_for_company_years=
+# wrong constant name after_remove_for_company_years?
 # wrong constant name after_remove_for_tasks
 # wrong constant name after_remove_for_tasks=
 # wrong constant name after_remove_for_tasks?
+# wrong constant name after_remove_for_years
+# wrong constant name after_remove_for_years=
+# wrong constant name after_remove_for_years?
+# wrong constant name before_add_for_company_years
+# wrong constant name before_add_for_company_years=
+# wrong constant name before_add_for_company_years?
 # wrong constant name before_add_for_tasks
 # wrong constant name before_add_for_tasks=
 # wrong constant name before_add_for_tasks?
+# wrong constant name before_add_for_years
+# wrong constant name before_add_for_years=
+# wrong constant name before_add_for_years?
+# wrong constant name before_remove_for_company_years
+# wrong constant name before_remove_for_company_years=
+# wrong constant name before_remove_for_company_years?
 # wrong constant name before_remove_for_tasks
 # wrong constant name before_remove_for_tasks=
 # wrong constant name before_remove_for_tasks?
+# wrong constant name before_remove_for_years
+# wrong constant name before_remove_for_years=
+# wrong constant name before_remove_for_years?
+# uninitialized constant #<Class:0x00007f87145ca178>::ACTIONS
+# Did you mean?  CompanyYear::ACTIONS
+# uninitialized constant #<Class:0x00007f87145ca178>::CALLBACKS
+# Did you mean?  CompanyYear::Callbacks
+#                CompanyYear::Callback
+#                CompanyYear::CALLBACKS
+# uninitialized constant #<Class:0x00007f87145ca178>::CALLBACK_FILTER_TYPES
+# Did you mean?  CompanyYear::CALLBACK_FILTER_TYPES
+# uninitialized constant #<Class:0x00007f87145ca178>::CALL_COMPILABLE_REGEXP
+# Did you mean?  CompanyYear::CALL_COMPILABLE_REGEXP
+# wrong constant name <Class:GeneratedAssociationMethods>
+# wrong constant name <Class:GeneratedAttributeMethods>
+# uninitialized constant #<Class:0x00007f87145ca178>::MAX_PASSWORD_LENGTH_ALLOWED
+# Did you mean?  CompanyYear::MAX_PASSWORD_LENGTH_ALLOWED
+# uninitialized constant #<Class:0x00007f87145ca178>::NAME_COMPILABLE_REGEXP
+# Did you mean?  CompanyYear::NAME_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007f87145ca178>::RESTRICTED_CLASS_METHODS
+# Did you mean?  CompanyYear::RESTRICTED_CLASS_METHODS
+# uninitialized constant #<Class:0x00007f87145ca178>::UNASSIGNABLE_KEYS
+# Did you mean?  CompanyYear::UNASSIGNABLE_KEYS
+# wrong constant name autosave_associated_records_for_company
+# wrong constant name autosave_associated_records_for_year
+# wrong constant name build_company
+# wrong constant name build_year
+# wrong constant name company
+# wrong constant name company=
+# wrong constant name create_company
+# wrong constant name create_company!
+# wrong constant name create_year
+# wrong constant name create_year!
+# wrong constant name reload_company
+# wrong constant name reload_year
+# wrong constant name year
+# wrong constant name year=
+# wrong constant name <static-init>
+# wrong constant name <static-init>
 # wrong constant name polar
 # wrong constant name rect
 # wrong constant name rectangular
@@ -12172,7 +12268,7 @@
 # uninitialized constant Rails::BacktraceCleaner::FORMATTED_GEMS_PATTERN
 # wrong constant name properties
 # wrong constant name properties=
-# undefined singleton method `property<defaultArg>1' for `#<Module:0x00007fa9a11455d0>'
+# undefined singleton method `property<defaultArg>1' for `#<Module:0x00007f871707e540>'
 # wrong constant name <static-init>
 # wrong constant name properties
 # wrong constant name properties=
@@ -12832,25 +12928,25 @@
 # wrong constant name T.noreturn
 # wrong constant name T.noreturn
 # wrong constant name T.untyped
-# uninitialized constant #<Class:0x00007fa99bbcb3c0>::ACTIONS
+# uninitialized constant #<Class:0x00007f871670cf48>::ACTIONS
 # Did you mean?  Task::ACTIONS
-# uninitialized constant #<Class:0x00007fa99bbcb3c0>::CALLBACKS
+# uninitialized constant #<Class:0x00007f871670cf48>::CALLBACKS
 # Did you mean?  Task::Callbacks
 #                Task::Callback
 #                Task::CALLBACKS
-# uninitialized constant #<Class:0x00007fa99bbcb3c0>::CALLBACK_FILTER_TYPES
+# uninitialized constant #<Class:0x00007f871670cf48>::CALLBACK_FILTER_TYPES
 # Did you mean?  Task::CALLBACK_FILTER_TYPES
-# uninitialized constant #<Class:0x00007fa99bbcb3c0>::CALL_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007f871670cf48>::CALL_COMPILABLE_REGEXP
 # Did you mean?  Task::CALL_COMPILABLE_REGEXP
 # wrong constant name <Class:GeneratedAssociationMethods>
 # wrong constant name <Class:GeneratedAttributeMethods>
-# uninitialized constant #<Class:0x00007fa99bbcb3c0>::MAX_PASSWORD_LENGTH_ALLOWED
+# uninitialized constant #<Class:0x00007f871670cf48>::MAX_PASSWORD_LENGTH_ALLOWED
 # Did you mean?  Task::MAX_PASSWORD_LENGTH_ALLOWED
-# uninitialized constant #<Class:0x00007fa99bbcb3c0>::NAME_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007f871670cf48>::NAME_COMPILABLE_REGEXP
 # Did you mean?  Task::NAME_COMPILABLE_REGEXP
-# uninitialized constant #<Class:0x00007fa99bbcb3c0>::RESTRICTED_CLASS_METHODS
+# uninitialized constant #<Class:0x00007f871670cf48>::RESTRICTED_CLASS_METHODS
 # Did you mean?  Task::RESTRICTED_CLASS_METHODS
-# uninitialized constant #<Class:0x00007fa99bbcb3c0>::UNASSIGNABLE_KEYS
+# uninitialized constant #<Class:0x00007f871670cf48>::UNASSIGNABLE_KEYS
 # Did you mean?  Task::UNASSIGNABLE_KEYS
 # wrong constant name autosave_associated_records_for_company
 # wrong constant name build_company
@@ -13214,8 +13310,8 @@
 # uninitialized constant WebSocket::Driver::Client::OPENING_OPCODES
 # uninitialized constant WebSocket::Driver::Client::PACK_FORMATS
 # uninitialized constant WebSocket::Driver::Client::RSV1
-# Did you mean?  WebSocket::Driver::Client::RSV2
-#                WebSocket::Driver::Client::RSV3
+# Did you mean?  WebSocket::Driver::Client::RSV3
+#                WebSocket::Driver::Client::RSV2
 # uninitialized constant WebSocket::Driver::Client::RSV2
 # Did you mean?  WebSocket::Driver::Client::RSV3
 #                WebSocket::Driver::Client::RSV1
@@ -13391,6 +13487,28 @@
 # wrong constant name normalize_header
 # wrong constant name <Class:Stream>
 # wrong constant name <Class:Visitors>
+# uninitialized constant #<Class:0x00007f8714d0dbb0>::ACTIONS
+# Did you mean?  Year::ACTIONS
+# uninitialized constant #<Class:0x00007f8714d0dbb0>::CALLBACKS
+# Did you mean?  Year::Callbacks
+#                Year::Callback
+#                Year::CALLBACKS
+# uninitialized constant #<Class:0x00007f8714d0dbb0>::CALLBACK_FILTER_TYPES
+# Did you mean?  Year::CALLBACK_FILTER_TYPES
+# uninitialized constant #<Class:0x00007f8714d0dbb0>::CALL_COMPILABLE_REGEXP
+# Did you mean?  Year::CALL_COMPILABLE_REGEXP
+# wrong constant name <Class:GeneratedAssociationMethods>
+# wrong constant name <Class:GeneratedAttributeMethods>
+# uninitialized constant #<Class:0x00007f8714d0dbb0>::MAX_PASSWORD_LENGTH_ALLOWED
+# Did you mean?  Year::MAX_PASSWORD_LENGTH_ALLOWED
+# uninitialized constant #<Class:0x00007f8714d0dbb0>::NAME_COMPILABLE_REGEXP
+# Did you mean?  Year::NAME_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007f8714d0dbb0>::RESTRICTED_CLASS_METHODS
+# Did you mean?  Year::RESTRICTED_CLASS_METHODS
+# uninitialized constant #<Class:0x00007f8714d0dbb0>::UNASSIGNABLE_KEYS
+# Did you mean?  Year::UNASSIGNABLE_KEYS
+# wrong constant name <static-init>
+# wrong constant name <static-init>
 # wrong constant name initialize
 # wrong constant name initialize
 # wrong constant name initialize

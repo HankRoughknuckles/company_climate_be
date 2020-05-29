@@ -20,3 +20,5 @@ module Anonymous_Module_43::Anonymous_Module_20; end
 module Anonymous_Module_43::Anonymous_Module_21; end
 module Anonymous_Module_44::Anonymous_Module_20; end
 module Anonymous_Module_44::Anonymous_Module_21; end
+module T::Private::Methods::MethodHooks; end
+module T::Private::Methods::SingletonMethodHooks; end

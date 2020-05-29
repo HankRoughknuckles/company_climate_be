@@ -1,3 +1,4 @@
+# typed: false
 FactoryBot.define do
   factory :company_year do
     company { nil }
