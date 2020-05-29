@@ -1197,9 +1197,6 @@ class ActionView::Template::Inline
   Finalizer = ::T.let(nil, ::T.untyped)
 end
 
-class ActionView::Template::LegacyTemplate
-end
-
 class ActionView::Template::Sources::File
   def initialize(filename); end
 end
@@ -1563,9 +1560,6 @@ class ActiveRecord::ConnectionAdapters::PostgreSQL::OID::Uuid
   ACCEPTABLE_UUID = ::T.let(nil, ::T.untyped)
 end
 
-class ActiveRecord::ConnectionAdapters::PostgreSQL::TypeMetadata
-end
-
 class ActiveRecord::ConnectionAdapters::PostgreSQLAdapter
   ADAPTER_NAME = ::T.let(nil, ::T.untyped)
   CACHED_PLAN_HEURISTIC = ::T.let(nil, ::T.untyped)
@@ -1778,9 +1772,6 @@ end
 
 module ActiveRecord::LegacyYamlAdapter
   def self.convert(klass, coder); end
-end
-
-class ActiveRecord::Locking::LockingType
 end
 
 class ActiveRecord::LogSubscriber
@@ -2613,12 +2604,6 @@ ActiveRecord::Type::Decimal = ActiveModel::Type::Decimal
 ActiveRecord::Type::Float = ActiveModel::Type::Float
 
 ActiveRecord::Type::Integer = ActiveModel::Type::Integer
-
-class ActiveRecord::Type::Serialized
-end
-
-class ActiveRecord::Type::Time::Value
-end
 
 module ActiveRecord::VERSION
   MAJOR = ::T.let(nil, ::T.untyped)
@@ -3855,6 +3840,50 @@ module Company::GeneratedAttributeMethods
 end
 
 module Company::GeneratedAttributeMethods
+  extend ::Mutex_m
+end
+
+class CompanyTask
+  include ::CompanyTask::GeneratedAttributeMethods
+  include ::CompanyTask::GeneratedAssociationMethods
+  def autosave_associated_records_for_company(*args); end
+
+  def autosave_associated_records_for_task(*args); end
+end
+
+module CompanyTask::GeneratedAssociationMethods
+  def build_company(*args, &block); end
+
+  def build_task(*args, &block); end
+
+  def company(); end
+
+  def company=(value); end
+
+  def create_company(*args, &block); end
+
+  def create_company!(*args, &block); end
+
+  def create_task(*args, &block); end
+
+  def create_task!(*args, &block); end
+
+  def reload_company(); end
+
+  def reload_task(); end
+
+  def task(); end
+
+  def task=(value); end
+end
+
+module CompanyTask::GeneratedAssociationMethods
+end
+
+module CompanyTask::GeneratedAttributeMethods
+end
+
+module CompanyTask::GeneratedAttributeMethods
   extend ::Mutex_m
 end
 
@@ -10253,9 +10282,6 @@ class Mail::POP3
 end
 
 class Mail::POP3
-end
-
-class Mail::PartsList
 end
 
 class Mail::PhraseList
@@ -16984,6 +17010,80 @@ class Set
   InspectKey = ::T.let(nil, ::T.untyped)
 end
 
+module Shoulda::Matchers
+  TERMINAL_MAX_WIDTH = ::T.let(nil, ::T.untyped)
+  VERSION = ::T.let(nil, ::T.untyped)
+end
+
+class Shoulda::Matchers::ActionController::PermitMatcher::ParametersDoubleRegistry
+  TOP_LEVEL = ::T.let(nil, ::T.untyped)
+end
+
+class Shoulda::Matchers::ActionController::RouteParams
+  PARAMS_TO_SYMBOLIZE = ::T.let(nil, ::T.untyped)
+end
+
+class Shoulda::Matchers::ActiveModel::HaveSecurePasswordMatcher
+  CORRECT_PASSWORD = ::T.let(nil, ::T.untyped)
+  EXPECTED_METHODS = ::T.let(nil, ::T.untyped)
+  INCORRECT_PASSWORD = ::T.let(nil, ::T.untyped)
+  MESSAGES = ::T.let(nil, ::T.untyped)
+end
+
+class Shoulda::Matchers::ActiveModel::NumericalityMatchers::ComparisonMatcher
+  ERROR_MESSAGES = ::T.let(nil, ::T.untyped)
+end
+
+class Shoulda::Matchers::ActiveModel::NumericalityMatchers::EvenNumberMatcher
+  NON_EVEN_NUMBER_VALUE = ::T.let(nil, ::T.untyped)
+end
+
+class Shoulda::Matchers::ActiveModel::NumericalityMatchers::OddNumberMatcher
+  NON_ODD_NUMBER_VALUE = ::T.let(nil, ::T.untyped)
+end
+
+class Shoulda::Matchers::ActiveModel::NumericalityMatchers::OnlyIntegerMatcher
+  NON_INTEGER_VALUE = ::T.let(nil, ::T.untyped)
+end
+
+class Shoulda::Matchers::ActiveModel::ValidateInclusionOfMatcher
+  ARBITRARY_OUTSIDE_DATE = ::T.let(nil, ::T.untyped)
+  ARBITRARY_OUTSIDE_DATETIME = ::T.let(nil, ::T.untyped)
+  ARBITRARY_OUTSIDE_DECIMAL = ::T.let(nil, ::T.untyped)
+  ARBITRARY_OUTSIDE_INTEGER = ::T.let(nil, ::T.untyped)
+  ARBITRARY_OUTSIDE_STRING = ::T.let(nil, ::T.untyped)
+  ARBITRARY_OUTSIDE_TIME = ::T.let(nil, ::T.untyped)
+  BLANK_VALUES = ::T.let(nil, ::T.untyped)
+  BOOLEAN_ALLOWS_BOOLEAN_MESSAGE = ::T.let(nil, ::T.untyped)
+  BOOLEAN_ALLOWS_NIL_MESSAGE = ::T.let(nil, ::T.untyped)
+end
+
+class Shoulda::Matchers::ActiveModel::ValidateNumericalityOfMatcher
+  DEFAULT_DIFF_TO_COMPARE = ::T.let(nil, ::T.untyped)
+  NON_NUMERIC_VALUE = ::T.let(nil, ::T.untyped)
+  NUMERIC_NAME = ::T.let(nil, ::T.untyped)
+end
+
+class Shoulda::Matchers::ActiveRecord::AssociationMatchers::OptionVerifier
+  RELATION_OPTIONS = ::T.let(nil, ::T.untyped)
+end
+
+class Shoulda::Matchers::Integrations::Libraries::Rails
+  SUB_LIBRARIES = ::T.let(nil, ::T.untyped)
+end
+
+class Shoulda::Matchers::Line
+  OFFSETS = ::T.let(nil, ::T.untyped)
+end
+
+class Shoulda::Matchers::Text
+  LIST_ITEM_REGEXP = ::T.let(nil, ::T.untyped)
+end
+
+module Shoulda::Matchers::WordWrap
+  TERMINAL_WIDTH = ::T.let(nil, ::T.untyped)
+end
+
 class SignalException
   def signm(); end
 
@@ -17303,6 +17403,24 @@ end
 class TZInfo::ZoneinfoTimezoneInfo
   MAX_TIMESTAMP = ::T.let(nil, ::T.untyped)
   MIN_TIMESTAMP = ::T.let(nil, ::T.untyped)
+end
+
+class Task
+  include ::Task::GeneratedAttributeMethods
+  include ::Task::GeneratedAssociationMethods
+end
+
+module Task::GeneratedAssociationMethods
+end
+
+module Task::GeneratedAssociationMethods
+end
+
+module Task::GeneratedAttributeMethods
+end
+
+module Task::GeneratedAttributeMethods
+  extend ::Mutex_m
 end
 
 class Tempfile
