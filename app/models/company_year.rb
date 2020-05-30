@@ -11,6 +11,9 @@
 #  updated_at   :datetime         not null
 #
 # typed: strict
+
+# Used for keeping track of how much co2 a company produced and captured year by
+# year
 class CompanyYear < ApplicationRecord
   belongs_to :company
   belongs_to :year
