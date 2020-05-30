@@ -26,6 +26,7 @@ group :development do
   gem 'spring-commands-rspec'
   gem 'sorbet'
   gem 'sorbet-runtime'
+  gem 'annotate'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
