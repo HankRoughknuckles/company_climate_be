@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_30_023856) do
+ActiveRecord::Schema.define(version: 2020_05_30_032938) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,16 +19,16 @@ ActiveRecord::Schema.define(version: 2020_05_30_023856) do
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "total_co2_produced", default: 0
-    t.integer "total_co2_captured", default: 0
+    t.float "total_co2_produced", default: 0.0
+    t.float "total_co2_captured", default: 0.0
     t.index ["name"], name: "index_companies_on_name", unique: true
   end
 
   create_table "company_years", force: :cascade do |t|
     t.bigint "company_id", null: false
     t.bigint "year_id", null: false
-    t.integer "co2_produced", default: 0
-    t.integer "co2_captured", default: 0
+    t.float "co2_produced", default: 0.0
+    t.float "co2_captured", default: 0.0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["company_id"], name: "index_company_years_on_company_id"
