@@ -2,12 +2,13 @@
 #
 # Table name: companies
 #
-#  id         :bigint           not null, primary key
-#  name       :string
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
+#  id                 :bigint           not null, primary key
+#  name               :string
+#  created_at         :datetime         not null
+#  updated_at         :datetime         not null
+#  total_co2_produced :integer          default(0)
+#  total_co2_captured :integer          default(0)
 #
-# typed: false
 require 'rails_helper'
 
 RSpec.describe Company, type: :model do
@@ -17,6 +18,16 @@ RSpec.describe Company, type: :model do
 
   it 'should not allow duplicate names' do
     expect(create(:company)).to validate_uniqueness_of(:name)
+  end
+
+  describe 'default column values' do
+    it 'should default the total co2 produced to 0' do
+      expect(Company.create(name: 'foo').total_co2_produced).to eq 0
+    end
+
+    it 'should default the total co2 captured to 0' do
+      expect(Company.create(name: 'foo').total_co2_captured).to eq 0
+    end
   end
 
   describe 'tasks' do
