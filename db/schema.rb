@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_03_185038) do
+ActiveRecord::Schema.define(version: 2020_06_03_191622) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,16 @@ ActiveRecord::Schema.define(version: 2020_06_03_185038) do
     t.float "total_co2_produced", default: 0.0
     t.float "total_co2_captured", default: 0.0
     t.index ["name"], name: "index_companies_on_name", unique: true
+  end
+
+  create_table "company_tasks", force: :cascade do |t|
+    t.integer "percent_done"
+    t.bigint "company_id", null: false
+    t.bigint "task_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["company_id"], name: "index_company_tasks_on_company_id"
+    t.index ["task_id"], name: "index_company_tasks_on_task_id"
   end
 
   create_table "company_years", force: :cascade do |t|
@@ -38,12 +48,9 @@ ActiveRecord::Schema.define(version: 2020_06_03_185038) do
   create_table "tasks", force: :cascade do |t|
     t.string "name"
     t.text "description"
-    t.integer "percent_done"
-    t.bigint "company_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.boolean "universal"
-    t.index ["company_id"], name: "index_tasks_on_company_id"
     t.index ["name"], name: "index_tasks_on_name"
   end
 
@@ -54,7 +61,8 @@ ActiveRecord::Schema.define(version: 2020_06_03_185038) do
     t.index ["name"], name: "index_years_on_name"
   end
 
+  add_foreign_key "company_tasks", "companies"
+  add_foreign_key "company_tasks", "tasks"
   add_foreign_key "company_years", "companies"
   add_foreign_key "company_years", "years"
-  add_foreign_key "tasks", "companies"
 end
