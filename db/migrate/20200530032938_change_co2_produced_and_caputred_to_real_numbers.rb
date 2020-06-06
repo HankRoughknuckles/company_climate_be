@@ -1,3 +1,4 @@
+# typed: true
 class ChangeCo2ProducedAndCaputredToRealNumbers < ActiveRecord::Migration[6.0]
   def change
     # the totals produced and captured on companies

@@ -1,3 +1,4 @@
+# typed: false
 # == Schema Information
 #
 # Table name: companies
@@ -32,9 +33,11 @@ RSpec.describe Company, type: :model do
 
   describe 'tasks' do
     it 'should have many tasks' do
-      company = create(:company, tasks: create_list(:task, 3))
+      company = create(:company)
+      task = create(:task)
+      create(:company_task, task: task, company: company)
 
-      expect(company.tasks.length).to eq(3)
+      expect(company.tasks).to eq([task])
     end
   end
 

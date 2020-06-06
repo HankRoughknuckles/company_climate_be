@@ -19,6 +19,62 @@ module ActionView::VERSION
 end
 class ActionView::Railtie < Rails::Engine
 end
+module ActionView::ViewPaths
+  def _prefixes; end
+  def any_templates?(*args, &block); end
+  def append_view_path(path); end
+  def details_for_lookup; end
+  def formats(*args, &block); end
+  def formats=(arg); end
+  def locale(*args, &block); end
+  def locale=(arg); end
+  def lookup_context; end
+  def prepend_view_path(path); end
+  def self.all_view_paths; end
+  def self.get_view_paths(klass); end
+  def self.set_view_paths(klass, paths); end
+  def template_exists?(*args, &block); end
+  def view_paths(*args, &block); end
+  extend ActiveSupport::Concern
+end
+module ActionView::ViewPaths::ClassMethods
+  def _prefixes; end
+  def _view_paths; end
+  def _view_paths=(paths); end
+  def append_view_path(path); end
+  def local_prefixes; end
+  def prepend_view_path(path); end
+  def view_paths; end
+  def view_paths=(paths); end
+end
+class ActionView::I18nProxy < I18n::Config
+  def initialize(original_config, lookup_context); end
+  def locale; end
+  def locale=(value); end
+  def lookup_context; end
+  def original_config; end
+end
+module ActionView::Rendering
+  def _normalize_args(action = nil, options = nil); end
+  def _normalize_options(options); end
+  def _process_format(format); end
+  def _render_template(options); end
+  def initialize; end
+  def process(*arg0); end
+  def render_to_body(options = nil); end
+  def rendered_format; end
+  def view_context; end
+  def view_context_class; end
+  def view_renderer; end
+  extend ActiveSupport::Concern
+  include ActionView::ViewPaths
+end
+module ActionView::Rendering::ClassMethods
+  def _helpers; end
+  def _routes; end
+  def build_view_context_class(klass, supports_path, routes, helpers); end
+  def view_context_class; end
+end
 module ActionView::CollectionCaching
   def cache_collection_render(instrumentation_payload, view, template); end
   def callable_cache_key?; end
@@ -928,6 +984,53 @@ class ActionView::Template::Types::Type
   def to_str; end
   def to_sym; end
 end
+class ActionView::PathSet
+  def +(array); end
+  def <<(*args); end
+  def [](*args, &block); end
+  def _find_all(path, prefixes, args); end
+  def compact; end
+  def concat(*args); end
+  def each(*args, &block); end
+  def exists?(path, prefixes, *args); end
+  def find(*args); end
+  def find_all(path, prefixes = nil, *args); end
+  def find_all_with_query(query); end
+  def find_file(*args, &block); end
+  def include?(*args, &block); end
+  def initialize(paths = nil); end
+  def initialize_copy(other); end
+  def insert(*args); end
+  def paths; end
+  def pop(*args, &block); end
+  def push(*args); end
+  def size(*args, &block); end
+  def to_ary; end
+  def typecast(paths); end
+  def unshift(*args); end
+  include Enumerable
+end
+class ActionView::DependencyTracker
+  def self.find_dependencies(name, template, view_paths = nil); end
+  def self.register_tracker(extension, tracker); end
+  def self.remove_tracker(handler); end
+end
+class ActionView::DependencyTracker::ERBTracker
+  def add_dependencies(render_dependencies, arguments, pattern); end
+  def add_dynamic_dependency(dependencies, dependency); end
+  def add_static_dependency(dependencies, dependency); end
+  def dependencies; end
+  def directory; end
+  def explicit_dependencies; end
+  def initialize(name, template, view_paths = nil); end
+  def name; end
+  def render_dependencies; end
+  def resolve_directories(wildcard_dependencies); end
+  def self.call(name, template, view_paths = nil); end
+  def self.supports_view_paths?; end
+  def source; end
+  def template; end
+end
 class ActionView::CacheExpiry
   def all_view_paths; end
   def clear_cache; end
@@ -1032,88 +1135,6 @@ class ActionView::Base
   include ActionView::Helpers::UrlHelper
   include ActionView::Helpers::UrlHelper
 end
-module ActionView::ViewPaths
-  def _prefixes; end
-  def any_templates?(*args, &block); end
-  def append_view_path(path); end
-  def details_for_lookup; end
-  def formats(*args, &block); end
-  def formats=(arg); end
-  def locale(*args, &block); end
-  def locale=(arg); end
-  def lookup_context; end
-  def prepend_view_path(path); end
-  def self.all_view_paths; end
-  def self.get_view_paths(klass); end
-  def self.set_view_paths(klass, paths); end
-  def template_exists?(*args, &block); end
-  def view_paths(*args, &block); end
-  extend ActiveSupport::Concern
-end
-module ActionView::ViewPaths::ClassMethods
-  def _prefixes; end
-  def _view_paths; end
-  def _view_paths=(paths); end
-  def append_view_path(path); end
-  def local_prefixes; end
-  def prepend_view_path(path); end
-  def view_paths; end
-  def view_paths=(paths); end
-end
-class ActionView::PathSet
-  def +(array); end
-  def <<(*args); end
-  def [](*args, &block); end
-  def _find_all(path, prefixes, args); end
-  def compact; end
-  def concat(*args); end
-  def each(*args, &block); end
-  def exists?(path, prefixes, *args); end
-  def find(*args); end
-  def find_all(path, prefixes = nil, *args); end
-  def find_all_with_query(query); end
-  def find_file(*args, &block); end
-  def include?(*args, &block); end
-  def initialize(paths = nil); end
-  def initialize_copy(other); end
-  def insert(*args); end
-  def paths; end
-  def pop(*args, &block); end
-  def push(*args); end
-  def size(*args, &block); end
-  def to_ary; end
-  def typecast(paths); end
-  def unshift(*args); end
-  include Enumerable
-end
-class ActionView::I18nProxy < I18n::Config
-  def initialize(original_config, lookup_context); end
-  def locale; end
-  def locale=(value); end
-  def lookup_context; end
-  def original_config; end
-end
-module ActionView::Rendering
-  def _normalize_args(action = nil, options = nil); end
-  def _normalize_options(options); end
-  def _process_format(format); end
-  def _render_template(options); end
-  def initialize; end
-  def process(*arg0); end
-  def render_to_body(options = nil); end
-  def rendered_format; end
-  def view_context; end
-  def view_context_class; end
-  def view_renderer; end
-  extend ActiveSupport::Concern
-  include ActionView::ViewPaths
-end
-module ActionView::Rendering::ClassMethods
-  def _helpers; end
-  def _routes; end
-  def build_view_context_class(klass, supports_path, routes, helpers); end
-  def view_context_class; end
-end
 module ActionView::Layouts
   def _conditional_layout?; end
   def _default_layout(lookup_context, formats, require_layout = nil); end
@@ -1182,27 +1203,6 @@ module ActionView::RoutingUrlFor
   def optimize_routes_generation?; end
   def url_for(options = nil); end
   def url_options; end
-end
-class ActionView::DependencyTracker
-  def self.find_dependencies(name, template, view_paths = nil); end
-  def self.register_tracker(extension, tracker); end
-  def self.remove_tracker(handler); end
-end
-class ActionView::DependencyTracker::ERBTracker
-  def add_dependencies(render_dependencies, arguments, pattern); end
-  def add_dynamic_dependency(dependencies, dependency); end
-  def add_static_dependency(dependencies, dependency); end
-  def dependencies; end
-  def directory; end
-  def explicit_dependencies; end
-  def initialize(name, template, view_paths = nil); end
-  def name; end
-  def render_dependencies; end
-  def resolve_directories(wildcard_dependencies); end
-  def self.call(name, template, view_paths = nil); end
-  def self.supports_view_paths?; end
-  def source; end
-  def template; end
 end
 class ActionView::Digestor
   def self.digest(name:, finder:, format: nil, dependencies: nil); end

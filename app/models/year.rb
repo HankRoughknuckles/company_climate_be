@@ -7,7 +7,7 @@
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
-# typed: false
+# typed: true
 class Year < ApplicationRecord
   def set_id_as_year_name
     self.id = self.name
