@@ -5646,3 +5646,307 @@ module ActiveRecord::Migration::Compatibility::V4_2::TableDefinition
   def references(*arg0, **options); end
   def timestamps(**options); end
 end
+class ActiveRecord::PredicateBuilder
+  def build(attribute, value); end
+  def build_bind_attribute(column_name, value); end
+  def build_from_hash(attributes); end
+  def convert_dot_notation_to_hash(attributes); end
+  def expand_from_hash(attributes); end
+  def handler_for(object); end
+  def initialize(table); end
+  def register_handler(klass, handler); end
+  def resolve_column_aliases(*args, &block); end
+  def self.references(attributes); end
+  def table; end
+end
+class ActiveRecord::PredicateBuilder::ArrayHandler
+  def call(attribute, value); end
+  def initialize(predicate_builder); end
+  def predicate_builder; end
+end
+module ActiveRecord::PredicateBuilder::ArrayHandler::NullPredicate
+  def self.or(other); end
+end
+class ActiveRecord::PredicateBuilder::BaseHandler
+  def call(attribute, value); end
+  def initialize(predicate_builder); end
+  def predicate_builder; end
+end
+class ActiveRecord::PredicateBuilder::BasicObjectHandler
+  def call(attribute, value); end
+  def initialize(predicate_builder); end
+  def predicate_builder; end
+end
+class ActiveRecord::PredicateBuilder::RangeHandler
+  def call(attribute, value); end
+  def initialize(predicate_builder); end
+  def predicate_builder; end
+end
+class ActiveRecord::PredicateBuilder::RangeHandler::RangeWithBinds < Struct
+  def begin; end
+  def begin=(_); end
+  def end; end
+  def end=(_); end
+  def exclude_end?; end
+  def self.[](*arg0); end
+  def self.inspect; end
+  def self.members; end
+  def self.new(*arg0); end
+end
+class ActiveRecord::PredicateBuilder::RelationHandler
+  def call(attribute, value); end
+end
+class ActiveRecord::PredicateBuilder::AssociationQueryValue
+  def associated_table; end
+  def convert_to_id(value); end
+  def ids; end
+  def initialize(associated_table, value); end
+  def primary_key; end
+  def queries; end
+  def value; end
+end
+class ActiveRecord::PredicateBuilder::PolymorphicArrayValue
+  def associated_table; end
+  def convert_to_id(value); end
+  def initialize(associated_table, values); end
+  def klass(value); end
+  def primary_key(value); end
+  def queries; end
+  def type_to_ids_mapping; end
+  def values; end
+end
+class ActiveRecord::TableMetadata
+  def aggregated_with?(aggregation_name); end
+  def arel_attribute(column_name); end
+  def arel_table; end
+  def associated_predicate_builder(table_name); end
+  def associated_table(table_name); end
+  def associated_with?(association_name); end
+  def association; end
+  def association_foreign_key(*args, &block); end
+  def association_foreign_type(*args, &block); end
+  def association_join_foreign_key(*args, &block); end
+  def association_join_primary_key(*args, &block); end
+  def has_column?(column_name); end
+  def initialize(klass, arel_table, association = nil, types = nil); end
+  def klass; end
+  def polymorphic_association?; end
+  def predicate_builder; end
+  def reflect_on_aggregation(aggregation_name); end
+  def resolve_column_aliases(hash); end
+  def type(column_name); end
+  def types; end
+end
+class ActiveRecord::ConnectionAdapters::TransactionState
+  def add_child(state); end
+  def commit!; end
+  def committed?; end
+  def completed?; end
+  def finalized?; end
+  def full_commit!; end
+  def full_rollback!; end
+  def fully_committed?; end
+  def fully_completed?; end
+  def fully_rolledback?; end
+  def initialize(state = nil); end
+  def nullify!; end
+  def rollback!; end
+  def rolledback?; end
+end
+class ActiveRecord::ConnectionAdapters::NullTransaction
+  def add_record(record); end
+  def closed?; end
+  def initialize; end
+  def joinable?; end
+  def open?; end
+  def state; end
+end
+class ActiveRecord::ConnectionAdapters::Transaction
+  def add_record(record); end
+  def before_commit_records; end
+  def closed?; end
+  def commit_records; end
+  def connection; end
+  def full_rollback?; end
+  def initialize(connection, options, run_commit_callbacks: nil); end
+  def isolation_level; end
+  def joinable?; end
+  def materialize!; end
+  def materialized?; end
+  def open?; end
+  def records; end
+  def rollback_records; end
+  def savepoint_name; end
+  def state; end
+end
+class ActiveRecord::ConnectionAdapters::SavepointTransaction < ActiveRecord::ConnectionAdapters::Transaction
+  def commit; end
+  def full_rollback?; end
+  def initialize(connection, savepoint_name, parent_transaction, *args, **options); end
+  def materialize!; end
+  def rollback; end
+end
+class ActiveRecord::ConnectionAdapters::RealTransaction < ActiveRecord::ConnectionAdapters::Transaction
+  def commit; end
+  def materialize!; end
+  def rollback; end
+end
+class ActiveRecord::ConnectionAdapters::TransactionManager
+  def after_failure_actions(transaction, error); end
+  def begin_transaction(options = nil); end
+  def commit_transaction; end
+  def current_transaction; end
+  def disable_lazy_transactions!; end
+  def enable_lazy_transactions!; end
+  def initialize(connection); end
+  def lazy_transactions_enabled?; end
+  def materialize_transactions; end
+  def open_transactions; end
+  def rollback_transaction(transaction = nil); end
+  def within_new_transaction(options = nil); end
+end
+class ActiveRecord::RuntimeRegistry
+  def connection_handler; end
+  def connection_handler=(arg0); end
+  def self.connection_handler; end
+  def self.connection_handler=(x); end
+  def self.sql_runtime; end
+  def self.sql_runtime=(x); end
+  def sql_runtime; end
+  def sql_runtime=(arg0); end
+  extend ActiveSupport::PerThreadRegistry
+end
+class ActiveRecord::StatementCache
+  def bind_map; end
+  def execute(params, connection, &block); end
+  def initialize(query_builder, bind_map, klass); end
+  def klass; end
+  def query_builder; end
+  def self.create(connection, callable = nil, &block); end
+  def self.partial_query(values); end
+  def self.partial_query_collector; end
+  def self.query(sql); end
+  def self.unsupported_value?(value); end
+end
+class ActiveRecord::StatementCache::Substitute
+end
+class ActiveRecord::StatementCache::Query
+  def initialize(sql); end
+  def sql_for(binds, connection); end
+end
+class ActiveRecord::StatementCache::PartialQuery < ActiveRecord::StatementCache::Query
+  def initialize(values); end
+  def sql_for(binds, connection); end
+end
+class ActiveRecord::StatementCache::PartialQueryCollector
+  def <<(str); end
+  def add_bind(obj); end
+  def initialize; end
+  def value; end
+end
+class ActiveRecord::StatementCache::Params
+  def bind; end
+end
+class ActiveRecord::StatementCache::BindMap
+  def bind(values); end
+  def initialize(bound_attributes); end
+end
+class ActiveRecord::Result
+  def [](idx); end
+  def cast_values(type_overrides = nil); end
+  def collect!; end
+  def column_type(name, type_overrides = nil); end
+  def column_types; end
+  def columns; end
+  def each; end
+  def empty?; end
+  def first; end
+  def hash_rows; end
+  def includes_column?(name); end
+  def initialize(columns, rows, column_types = nil); end
+  def initialize_copy(other); end
+  def last; end
+  def length; end
+  def map!; end
+  def rows; end
+  def to_a; end
+  def to_ary; end
+  def to_hash; end
+  include Enumerable
+end
+class ActiveRecord::Associations::Association
+  def association_scope; end
+  def build_record(attributes); end
+  def create!(attributes = nil, &block); end
+  def create(attributes = nil, &block); end
+  def creation_attributes; end
+  def extensions; end
+  def find_target; end
+  def find_target?; end
+  def foreign_key_for?(record); end
+  def foreign_key_present?; end
+  def initialize(owner, reflection); end
+  def initialize_attributes(record, except_from_scope_attributes = nil); end
+  def inverse_association_for(record); end
+  def inverse_reflection_for(record); end
+  def inversed_from(record); end
+  def inversed_from_queries(record); end
+  def invertible_for?(record); end
+  def klass; end
+  def load_target; end
+  def loaded!; end
+  def loaded?; end
+  def marshal_dump; end
+  def marshal_load(data); end
+  def options(*args, &block); end
+  def owner; end
+  def raise_on_type_mismatch!(record); end
+  def reflection; end
+  def reload(force = nil); end
+  def remove_inverse_instance(record); end
+  def reset; end
+  def reset_scope; end
+  def scope; end
+  def scope_for_create; end
+  def set_inverse_instance(record); end
+  def set_inverse_instance_from_queries(record); end
+  def set_owner_attributes(record); end
+  def skip_statement_cache?(scope); end
+  def stale_state; end
+  def stale_target?; end
+  def target; end
+  def target=(target); end
+  def target_scope; end
+end
+class ActiveRecord::Associations::SingularAssociation < ActiveRecord::Associations::Association
+  def _create_record(attributes, raise_error = nil, &block); end
+  def build(attributes = nil, &block); end
+  def find_target; end
+  def force_reload_reader; end
+  def reader; end
+  def replace(record); end
+  def scope_for_create; end
+  def set_new_record(record); end
+  def writer(record); end
+end
+class ActiveRecord::Associations::BelongsToAssociation < ActiveRecord::Associations::SingularAssociation
+  def decrement_counters; end
+  def decrement_counters_before_last_save; end
+  def default(&block); end
+  def find_target?; end
+  def foreign_key_present?; end
+  def handle_dependency; end
+  def increment_counters; end
+  def inversed_from(record); end
+  def invertible_for?(record); end
+  def primary_key(klass); end
+  def replace(record); end
+  def replace_keys(record); end
+  def require_counter_update?; end
+  def reset; end
+  def stale_state; end
+  def target_changed?; end
+  def update_counters(by); end
+  def update_counters_via_scope(klass, foreign_key, by); end
+  def updated?; end
+end

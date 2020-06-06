@@ -1450,6 +1450,10 @@ class ActionDispatch::Callbacks
   extend ActiveSupport::DescendantsTracker
   include ActiveSupport::Callbacks
 end
+module ActionController::ApiRendering
+  def render_to_body(options = nil); end
+  extend ActiveSupport::Concern
+end
 class ActionDispatch::MiddlewareStack
   def [](i); end
   def assert_index(index, where); end
@@ -2129,10 +2133,6 @@ module ActionController::Redirecting
   extend ActiveSupport::Concern
   include AbstractController::Logger
   include ActionController::UrlFor
-end
-module ActionController::ApiRendering
-  def render_to_body(options = nil); end
-  extend ActiveSupport::Concern
 end
 class ActionController::MissingRenderer < LoadError
   def initialize(format); end
@@ -2889,6 +2889,12 @@ end
 class ActionController::API < ActionController::Metal
   def __callbacks; end
   def __callbacks?; end
+  def _helper_methods; end
+  def _helper_methods=(val); end
+  def _helper_methods?; end
+  def _helpers; end
+  def _helpers=(val); end
+  def _helpers?; end
   def _process_action_callbacks; end
   def _renderers; end
   def _renderers=(val); end
@@ -2903,6 +2909,12 @@ class ActionController::API < ActionController::Metal
   def etaggers; end
   def etaggers=(val); end
   def etaggers?; end
+  def helpers_path; end
+  def helpers_path=(val); end
+  def helpers_path?; end
+  def include_all_helpers; end
+  def include_all_helpers=(val); end
+  def include_all_helpers?; end
   def logger; end
   def logger=(value); end
   def rescue_handlers; end
@@ -2911,6 +2923,12 @@ class ActionController::API < ActionController::Metal
   def self.__callbacks; end
   def self.__callbacks=(val); end
   def self.__callbacks?; end
+  def self._helper_methods; end
+  def self._helper_methods=(val); end
+  def self._helper_methods?; end
+  def self._helpers; end
+  def self._helpers=(val); end
+  def self._helpers?; end
   def self._process_action_callbacks; end
   def self._process_action_callbacks=(value); end
   def self._renderers; end
@@ -2925,6 +2943,12 @@ class ActionController::API < ActionController::Metal
   def self.etaggers; end
   def self.etaggers=(val); end
   def self.etaggers?; end
+  def self.helpers_path; end
+  def self.helpers_path=(val); end
+  def self.helpers_path?; end
+  def self.include_all_helpers; end
+  def self.include_all_helpers=(val); end
+  def self.include_all_helpers?; end
   def self.logger; end
   def self.logger=(value); end
   def self.middleware_stack; end
@@ -2933,15 +2957,18 @@ class ActionController::API < ActionController::Metal
   def self.rescue_handlers?; end
   def self.without_modules(*modules); end
   extend AbstractController::Callbacks::ClassMethods
+  extend AbstractController::Helpers::ClassMethods
   extend AbstractController::UrlFor::ClassMethods
   extend ActionController::ConditionalGet::ClassMethods
   extend ActionController::DefaultHeaders::ClassMethods
   extend ActionController::ForceSSL::ClassMethods
+  extend ActionController::Helpers::ClassMethods
   extend ActionController::Instrumentation::ClassMethods
   extend ActionController::ParamsWrapper::ClassMethods
   extend ActionController::Railties::Helpers
   extend ActionController::Renderers::ClassMethods
   extend ActionController::Rendering::ClassMethods
+  extend ActionView::Rendering::ClassMethods
   extend ActionView::ViewPaths::ClassMethods
   extend ActiveRecord::Railties::ControllerRuntime::ClassMethods
   extend ActiveSupport::Callbacks::ClassMethods
@@ -2950,6 +2977,7 @@ class ActionController::API < ActionController::Metal
   extend Anonymous_Module_6
   include AbstractController::Callbacks
   include AbstractController::Callbacks
+  include AbstractController::Helpers
   include AbstractController::Logger
   include AbstractController::Logger
   include AbstractController::Rendering
@@ -2960,6 +2988,8 @@ class ActionController::API < ActionController::Metal
   include ActionController::DataStreaming
   include ActionController::DefaultHeaders
   include ActionController::ForceSSL
+  include ActionController::Helpers
+  include ActionController::ImplicitRender
   include ActionController::Instrumentation
   include ActionController::ParamsWrapper
   include ActionController::Redirecting
@@ -2974,6 +3004,8 @@ class ActionController::API < ActionController::Metal
   include ActionDispatch::Routing::RouteSet::MountedHelpers
   include ActionDispatch::Routing::UrlFor
   include ActionDispatch::Routing::UrlFor
+  include ActionView::Rendering
+  include ActionView::ViewPaths
   include ActionView::ViewPaths
   include ActiveRecord::Railties::ControllerRuntime
   include ActiveSupport::Benchmarkable

@@ -9,8 +9,10 @@
 #  total_co2_produced :float            default(0.0)
 #  total_co2_captured :float            default(0.0)
 #
+# typed: strict
 class Company < ApplicationRecord
-  has_many :tasks
+  has_many :company_tasks
+  has_many :tasks, through: :company_tasks
   has_many :company_years
   has_many :years, through: :company_years
 

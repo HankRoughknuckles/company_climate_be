@@ -1,21 +1,22 @@
+# typed: false
 # == Schema Information
 #
 # Table name: tasks
 #
-#  id           :bigint           not null, primary key
-#  name         :string
-#  description  :text
-#  percent_done :integer
-#  company_id   :bigint
-#  created_at   :datetime         not null
-#  updated_at   :datetime         not null
+#  id          :bigint           not null, primary key
+#  name        :string
+#  description :text
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#  universal   :boolean
 #
-# typed: false
 FactoryBot.define do
   factory :task do
-    name { "MyString" }
+    sequence(:name) {|n| "Task #{n}" }
     description { "MyText" }
-    percent_done { 1 }
-    company { nil }
+
+    trait :universal do
+      universal { true }
+    end
   end
 end
