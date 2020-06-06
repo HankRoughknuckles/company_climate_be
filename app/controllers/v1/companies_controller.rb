@@ -1,5 +1,5 @@
 # typed: true
-class CompaniesController < ApplicationController
+class V1::CompaniesController < ApplicationController
   def index
     @companies = Company.all
   end

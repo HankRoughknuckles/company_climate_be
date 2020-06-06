@@ -21006,6 +21006,8 @@ module Task::GeneratedAttributeMethods
 end
 
 class Task
+  extend ::T::Private::Methods::MethodHooks
+  extend ::T::Private::Methods::SingletonMethodHooks
   def self.after_add_for_companies(); end
 
   def self.after_add_for_companies=(val); end

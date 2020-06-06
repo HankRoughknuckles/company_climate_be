@@ -5950,3 +5950,32 @@ class ActiveRecord::Associations::BelongsToAssociation < ActiveRecord::Associati
   def update_counters_via_scope(klass, foreign_key, by); end
   def updated?; end
 end
+class ActiveRecord::Associations::AssociationScope
+  def add_constraints(scope, owner, chain); end
+  def apply_scope(scope, table, key, value); end
+  def eval_scope(reflection, scope, owner); end
+  def get_chain(reflection, association, tracker); end
+  def initialize(value_transformation); end
+  def join(table, constraint); end
+  def last_chain_scope(scope, reflection, owner); end
+  def next_chain_scope(scope, reflection, next_reflection); end
+  def scope(association); end
+  def self.create(&block); end
+  def self.get_bind_values(owner, chain); end
+  def self.scope(association); end
+  def transform_value(value); end
+  def value_transformation; end
+end
+class ActiveRecord::Associations::AssociationScope::ReflectionProxy < SimpleDelegator
+  def aliased_table; end
+  def all_includes; end
+  def initialize(reflection, aliased_table); end
+end
+class ActiveRecord::Associations::AliasTracker
+  def aliased_table_for(table_name, aliased_name, type_caster); end
+  def aliases; end
+  def initialize(connection, aliases); end
+  def self.create(connection, initial_table, joins); end
+  def self.initial_count_for(connection, name, table_joins); end
+  def truncate(name); end
+end

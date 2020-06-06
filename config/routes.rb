@@ -1,8 +1,8 @@
 # == Route Map
 #
 #                                Prefix Verb   URI Pattern                                                                              Controller#Action
-#                             companies GET    /companies(.:format)                                                                     companies#index
-#                               company GET    /companies/:id(.:format)                                                                 companies#show
+#                          v1_companies GET    /v1/companies(.:format)                                                                  v1/companies#index
+#                            v1_company GET    /v1/companies/:id(.:format)                                                              v1/companies#show
 #         rails_postmark_inbound_emails POST   /rails/action_mailbox/postmark/inbound_emails(.:format)                                  action_mailbox/ingresses/postmark/inbound_emails#create
 #            rails_relay_inbound_emails POST   /rails/action_mailbox/relay/inbound_emails(.:format)                                     action_mailbox/ingresses/relay/inbound_emails#create
 #         rails_sendgrid_inbound_emails POST   /rails/action_mailbox/sendgrid/inbound_emails(.:format)                                  action_mailbox/ingresses/sendgrid/inbound_emails#create
@@ -24,5 +24,7 @@
 
 # typed: strict
 Rails.application.routes.draw do
-  resources :companies, only: [:index, :show]
+  namespace 'v1' do
+    resources :companies, only: [:index, :show]
+  end
 end
