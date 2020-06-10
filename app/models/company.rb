@@ -11,7 +11,7 @@
 #
 # typed: strict
 class Company < ApplicationRecord
-  has_many :company_tasks
+  has_many :company_tasks, dependent: :destroy
   has_many :tasks, through: :company_tasks
   has_many :company_years
   has_many :years, through: :company_years
