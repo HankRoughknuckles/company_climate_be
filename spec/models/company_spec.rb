@@ -59,4 +59,15 @@ RSpec.describe Company, type: :model do
       expect(company.co2_produced_in(year.name)).to eq (co2_produced)
     end
   end
+
+  describe 'when destroyed' do
+    it 'it should destroy any associated company_tasks' do
+      company = create(:company)
+      task = create(:task)
+      company_task = create(:company_task, company: company, task: task)
+
+      company.destroy
+      expect(CompanyTask.where(id: company_task.id).length).to eq 0
+    end
+  end
 end
