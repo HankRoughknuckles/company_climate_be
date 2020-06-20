@@ -21,16 +21,6 @@ RSpec.describe Company, type: :model do
     expect(create(:company)).to validate_uniqueness_of(:name)
   end
 
-  describe 'default column values' do
-    it 'should default the total co2 produced to 0' do
-      expect(Company.create(name: 'foo').total_co2_produced).to eq 0
-    end
-
-    it 'should default the total co2 captured to 0' do
-      expect(Company.create(name: 'foo').total_co2_captured).to eq 0
-    end
-  end
-
   describe 'tasks' do
     it 'should have many tasks' do
       company = create(:company)
@@ -57,6 +47,55 @@ RSpec.describe Company, type: :model do
       create(:company_year, company: company, year: year, co2_produced: co2_produced)
 
       expect(company.co2_produced_in(year.name)).to eq (co2_produced)
+    end
+  end
+
+  describe '#co2_captured_in' do
+    it 'should tell you how much co2 the company captured in the given year' do
+      year = create(:year, name: 2020)
+      company = create(:company)
+      co2_captured = 1000
+      create(:company_year, company: company, year: year, co2_captured: co2_captured)
+
+      expect(company.co2_captured_in(year.name)).to eq (co2_captured)
+    end
+  end
+
+  describe '#score' do
+    describe 'when there is data available for this year' do
+      let(:year) { create(:year, name: 2020) }
+      let(:company) { create(:company) }
+      let(:co2_produced) { 1000 }
+      let(:co2_captured) { 500 }
+      before do
+        create(:company_year,
+               company: company,
+               year: year,
+               co2_produced: co2_produced,
+               co2_captured: co2_captured)
+      end
+
+      it 'should equal this year\'s captured minus production' do
+        expect(company.score).to eq (co2_captured - co2_produced)
+      end
+    end
+
+    describe 'when there is only data for the company\'s full lifetime available' do
+      let(:total_co2_produced) { 200 }
+      let(:total_co2_captured) { 100 }
+      let(:company) { create(:company, total_co2_produced: total_co2_produced, total_co2_captured: total_co2_captured) }
+
+      it 'should equal this year\'s captured minus production' do
+        expect(company.score).to eq (total_co2_captured - total_co2_produced)
+      end
+    end
+
+    describe 'when there is no production or capture data available' do
+      let(:company) { create(:company, total_co2_produced: nil, total_co2_captured: nil) }
+
+      it 'should return nil' do
+        expect(company.score).to eq (nil)
+      end
     end
   end
 

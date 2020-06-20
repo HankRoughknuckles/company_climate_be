@@ -2,6 +2,7 @@ json.id @company.id
 json.name @company.name
 json.total_co2_produced @company.total_co2_produced
 json.total_co2_captured @company.total_co2_captured
+json.score @company.score
 
 json.universal_tasks Task.universal do |task|
   company_task = task.get_company_task_for(@company.id)
