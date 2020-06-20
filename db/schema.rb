@@ -1,3 +1,4 @@
+# typed: strict
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_03_191622) do
+ActiveRecord::Schema.define(version: 2020_06_14_194112) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,8 +20,8 @@ ActiveRecord::Schema.define(version: 2020_06_03_191622) do
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.float "total_co2_produced", default: 0.0
-    t.float "total_co2_captured", default: 0.0
+    t.float "total_co2_produced"
+    t.float "total_co2_captured"
     t.index ["name"], name: "index_companies_on_name", unique: true
   end
 

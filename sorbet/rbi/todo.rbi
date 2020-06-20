@@ -2,23 +2,23 @@
 #   srb rbi todo
 
 # typed: strong
-module ::Anonymous_Delegator_12; end
-module ::Anonymous_Delegator_13; end
-module ::Anonymous_Delegator_14; end
 module ::Anonymous_Delegator_15; end
 module ::Anonymous_Delegator_16; end
 module ::Anonymous_Delegator_17; end
 module ::Anonymous_Delegator_18; end
+module ::Anonymous_Delegator_19; end
+module ::Anonymous_Delegator_20; end
+module ::Anonymous_Delegator_21; end
 module ::Anonymous_Delegator_3; end
-module ::Anonymous_Delegator_32; end
-module ActiveRecord::CollectionCacheKey; end
-module Anonymous_Module_19::Anonymous_Module_20; end
-module Anonymous_Module_19::Anonymous_Module_21; end
-module Anonymous_Module_37::Anonymous_Module_20; end
-module Anonymous_Module_37::Anonymous_Module_21; end
-module Anonymous_Module_43::Anonymous_Module_20; end
-module Anonymous_Module_43::Anonymous_Module_21; end
-module Anonymous_Module_44::Anonymous_Module_20; end
-module Anonymous_Module_44::Anonymous_Module_21; end
+module ::Anonymous_Delegator_35; end
+module ::Anonymous_Delegator_9; end
+module Anonymous_Module_22::Anonymous_Module_23; end
+module Anonymous_Module_22::Anonymous_Module_24; end
+module Anonymous_Module_40::Anonymous_Module_23; end
+module Anonymous_Module_40::Anonymous_Module_24; end
+module Anonymous_Module_46::Anonymous_Module_23; end
+module Anonymous_Module_46::Anonymous_Module_24; end
+module Anonymous_Module_47::Anonymous_Module_23; end
+module Anonymous_Module_47::Anonymous_Module_24; end
 module T::Private::Methods::MethodHooks; end
 module T::Private::Methods::SingletonMethodHooks; end

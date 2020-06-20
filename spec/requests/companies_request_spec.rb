@@ -24,14 +24,15 @@ RSpec.describe "V1::Companies", type: :request do
         total_co2_produced: 10,
         total_co2_captured: 5,
       }
-      create(:company, attributes)
+      company = create(:company, attributes)
 
       get '/v1/companies'
 
       company_in_response = json[0]
-      expect(company_in_response['name']).to eq attributes[:name]
-      expect(company_in_response['total_co2_produced']).to eq attributes[:total_co2_produced]
-      expect(company_in_response['total_co2_captured']).to eq attributes[:total_co2_captured]
+      expect(company_in_response['name']).to eq company.name
+      expect(company_in_response['total_co2_produced']).to eq company.total_co2_produced
+      expect(company_in_response['total_co2_captured']).to eq company.total_co2_captured
+      expect(company_in_response['score']).to eq company.score
     end
   end
 
@@ -46,9 +47,10 @@ RSpec.describe "V1::Companies", type: :request do
 
       get "/v1/companies/#{company.id}"
 
-      expect(json['name']).to eq attributes[:name]
-      expect(json['total_co2_produced']).to eq attributes[:total_co2_produced]
-      expect(json['total_co2_captured']).to eq attributes[:total_co2_captured]
+      expect(json['name']).to eq company.name
+      expect(json['total_co2_produced']).to eq company.total_co2_produced
+      expect(json['total_co2_captured']).to eq company.total_co2_captured
+      expect(json['score']).to eq company.score
     end
 
     describe 'tasks on the company' do

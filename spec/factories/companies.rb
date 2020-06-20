@@ -13,8 +13,8 @@
 FactoryBot.define do
   factory :company do
     sequence(:name) { |n| "Company #{n}" }
-    total_co2_produced { rand(10000) }
-    total_co2_captured { rand(10000) }
+    total_co2_produced { nil }
+    total_co2_captured { nil }
 
     factory :company_with_task do
       after(:create) do |company|
