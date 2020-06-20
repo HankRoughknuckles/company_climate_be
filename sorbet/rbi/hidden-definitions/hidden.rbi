@@ -1197,6 +1197,9 @@ class ActionView::Template::Inline
   Finalizer = ::T.let(nil, ::T.untyped)
 end
 
+class ActionView::Template::LegacyTemplate
+end
+
 class ActionView::Template::Sources::File
   def initialize(filename); end
 end
@@ -1543,6 +1546,9 @@ end
 
 class ActiveRecord::ConnectionAdapters::PostgreSQL::OID::Uuid
   ACCEPTABLE_UUID = ::T.let(nil, ::T.untyped)
+end
+
+class ActiveRecord::ConnectionAdapters::PostgreSQL::TypeMetadata
 end
 
 class ActiveRecord::ConnectionAdapters::PostgreSQLAdapter
@@ -7071,6 +7077,11 @@ module CompanyTask::GeneratedAttributeMethods
   extend ::Mutex_m
 end
 
+class CompanyTask
+  extend ::T::Private::Methods::MethodHooks
+  extend ::T::Private::Methods::SingletonMethodHooks
+end
+
 class CompanyYear
   include ::CompanyYear::GeneratedAttributeMethods
   include ::CompanyYear::GeneratedAssociationMethods
@@ -8544,6 +8555,8 @@ class File
   def self.lutime(*_); end
 
   def self.mkfifo(*_); end
+
+  def self.probe_stat_in(dir); end
 end
 
 FileList = Rake::FileList
@@ -13759,6 +13772,9 @@ end
 class Mail::POP3
 end
 
+class Mail::PartsList
+end
+
 class Mail::PhraseList
   def initialize(string); end
 
@@ -14149,9 +14165,13 @@ end
 class Net::HTTPAlreadyReported
 end
 
-Net::HTTPClientError::EXCEPTION_TYPE = Net::HTTPServerException
+class Net::HTTPClientError
+end
 
-Net::HTTPClientErrorCode = Net::HTTPClientError
+Net::HTTPClientErrorCode::EXCEPTION_TYPE = Net::HTTPServerException
+
+class Net::HTTPClientError
+end
 
 Net::HTTPClientException = Net::HTTPServerException
 
@@ -14225,9 +14245,13 @@ end
 class Net::HTTPRangeNotSatisfiable
 end
 
-Net::HTTPRedirection::EXCEPTION_TYPE = Net::HTTPRetriableError
+class Net::HTTPRedirection
+end
 
-Net::HTTPRedirectionCode = Net::HTTPRedirection
+Net::HTTPRedirectionCode::EXCEPTION_TYPE = Net::HTTPRetriableError
+
+class Net::HTTPRedirection
+end
 
 class Net::HTTPRequestTimeout
   HAS_BODY = ::T.let(nil, ::T.untyped)
@@ -14242,9 +14266,13 @@ Net::HTTPResponceReceiver = Net::HTTPResponse
 
 Net::HTTPRetriableCode = Net::HTTPRedirection
 
-Net::HTTPServerError::EXCEPTION_TYPE = Net::HTTPFatalError
+class Net::HTTPServerError
+end
 
-Net::HTTPServerErrorCode = Net::HTTPServerError
+Net::HTTPServerErrorCode::EXCEPTION_TYPE = Net::HTTPFatalError
+
+class Net::HTTPServerError
+end
 
 class Net::HTTP
 end
@@ -14256,9 +14284,13 @@ Net::HTTPSession::ProxyMod = Net::HTTP::ProxyDelta
 class Net::HTTP
 end
 
-Net::HTTPSuccess::EXCEPTION_TYPE = Net::HTTPError
+class Net::HTTPSuccess
+end
 
-Net::HTTPSuccessCode = Net::HTTPSuccess
+Net::HTTPSuccessCode::EXCEPTION_TYPE = Net::HTTPError
+
+class Net::HTTPSuccess
+end
 
 class Net::HTTPURITooLong
   HAS_BODY = ::T.let(nil, ::T.untyped)
@@ -18150,131 +18182,16 @@ module Rack
   VERSION = ::T.let(nil, ::T.untyped)
 end
 
-class Rack::Auth::AbstractHandler
-  def initialize(app, realm=T.unsafe(nil), &authenticator); end
-
-  def realm(); end
-
-  def realm=(realm); end
-end
-
-class Rack::Auth::AbstractHandler
-end
-
 class Rack::Auth::AbstractRequest
-  def initialize(env); end
-
-  def params(); end
-
-  def parts(); end
-
-  def provided?(); end
-
-  def request(); end
-
-  def scheme(); end
-
-  def valid?(); end
   AUTHORIZATION_KEYS = ::T.let(nil, ::T.untyped)
 end
 
-class Rack::Auth::AbstractRequest
-end
-
-class Rack::Auth::Basic
-  def call(env); end
-end
-
-class Rack::Auth::Basic::Request
-  def basic?(); end
-
-  def credentials(); end
-
-  def username(); end
-end
-
-class Rack::Auth::Basic::Request
-end
-
-class Rack::Auth::Basic
-end
-
 class Rack::Auth::Digest::MD5
-  def call(env); end
-
-  def initialize(app, realm=T.unsafe(nil), opaque=T.unsafe(nil), &authenticator); end
-
-  def opaque(); end
-
-  def opaque=(opaque); end
-
-  def passwords_hashed=(passwords_hashed); end
-
-  def passwords_hashed?(); end
   QOP = ::T.let(nil, ::T.untyped)
 end
 
-class Rack::Auth::Digest::MD5
-end
-
-class Rack::Auth::Digest::Nonce
-  def digest(); end
-
-  def fresh?(); end
-
-  def initialize(timestamp=T.unsafe(nil), given_digest=T.unsafe(nil)); end
-
-  def stale?(); end
-
-  def valid?(); end
-end
-
-class Rack::Auth::Digest::Nonce
-  def self.parse(string); end
-
-  def self.private_key(); end
-
-  def self.private_key=(private_key); end
-
-  def self.time_limit(); end
-
-  def self.time_limit=(time_limit); end
-end
-
 class Rack::Auth::Digest::Params
-  def [](k); end
-
-  def []=(k, v); end
-
-  def initialize(); end
-
-  def quote(str); end
   UNQUOTED = ::T.let(nil, ::T.untyped)
-end
-
-class Rack::Auth::Digest::Params
-  def self.dequote(str); end
-
-  def self.parse(str); end
-
-  def self.split_header_value(str); end
-end
-
-class Rack::Auth::Digest::Request
-  def correct_uri?(); end
-
-  def digest?(); end
-
-  def method(); end
-
-  def method_missing(sym, *args); end
-
-  def nonce(); end
-
-  def respond_to?(sym, *_); end
-end
-
-class Rack::Auth::Digest::Request
 end
 
 class Rack::Builder
@@ -18307,21 +18224,7 @@ class Rack::Builder
 end
 
 class Rack::Cascade
-  def <<(app); end
-
-  def add(app); end
-
-  def apps(); end
-
-  def call(env); end
-
-  def include?(app); end
-
-  def initialize(apps, cascade_for=T.unsafe(nil)); end
   NotFound = ::T.let(nil, ::T.untyped)
-end
-
-class Rack::Cascade
 end
 
 class Rack::Chunked::Body
@@ -18330,154 +18233,44 @@ class Rack::Chunked::Body
 end
 
 class Rack::CommonLogger
-  def call(env); end
-
-  def initialize(app, logger=T.unsafe(nil)); end
   FORMAT = ::T.let(nil, ::T.untyped)
 end
 
-class Rack::CommonLogger
+class Rack::Cors
+  CORS_SIMPLE_HEADERS = ::T.let(nil, ::T.untyped)
+  DEFAULT_VARY_HEADERS = ::T.let(nil, ::T.untyped)
+  ENV_KEY = ::T.let(nil, ::T.untyped)
+  HTTP_ACCESS_CONTROL_REQUEST_HEADERS = ::T.let(nil, ::T.untyped)
+  HTTP_ACCESS_CONTROL_REQUEST_METHOD = ::T.let(nil, ::T.untyped)
+  HTTP_ORIGIN = ::T.let(nil, ::T.untyped)
+  HTTP_X_ORIGIN = ::T.let(nil, ::T.untyped)
+  OPTIONS = ::T.let(nil, ::T.untyped)
+  PATH_INFO = ::T.let(nil, ::T.untyped)
+  RACK_CORS = ::T.let(nil, ::T.untyped)
+  RACK_LOGGER = ::T.let(nil, ::T.untyped)
+  REQUEST_METHOD = ::T.let(nil, ::T.untyped)
+  VARY = ::T.let(nil, ::T.untyped)
 end
 
-class Rack::Config
-  def call(env); end
-
-  def initialize(app, &block); end
-end
-
-class Rack::Config
-end
-
-class Rack::ContentLength
-  include ::Rack::Utils
-  def call(env); end
-
-  def initialize(app); end
-end
-
-class Rack::ContentLength
-end
-
-class Rack::ContentType
-  include ::Rack::Utils
-  def call(env); end
-
-  def initialize(app, content_type=T.unsafe(nil)); end
-end
-
-class Rack::ContentType
-end
-
-class Rack::Deflater
-  def call(env); end
-
-  def initialize(app, options=T.unsafe(nil)); end
-end
-
-class Rack::Deflater::GzipStream
-  def close(); end
-
-  def each(&block); end
-
-  def initialize(body, mtime, sync); end
-
-  def write(data); end
-end
-
-class Rack::Deflater::GzipStream
-end
-
-class Rack::Deflater
+class Rack::Cors::Result
+  HEADER_KEY = ::T.let(nil, ::T.untyped)
+  MISS_DENY_HEADER = ::T.let(nil, ::T.untyped)
+  MISS_DENY_METHOD = ::T.let(nil, ::T.untyped)
+  MISS_NO_METHOD = ::T.let(nil, ::T.untyped)
+  MISS_NO_ORIGIN = ::T.let(nil, ::T.untyped)
+  MISS_NO_PATH = ::T.let(nil, ::T.untyped)
 end
 
 class Rack::Directory
-  def call(env); end
-
-  def check_bad_request(path_info); end
-
-  def check_forbidden(path_info); end
-
-  def entity_not_found(path_info); end
-
-  def filesize_format(int); end
-
-  def get(env); end
-
-  def initialize(root, app=T.unsafe(nil)); end
-
-  def list_directory(path_info, path, script_name); end
-
-  def list_path(env, path, path_info, script_name); end
-
-  def root(); end
-
-  def stat(path); end
   DIR_FILE = ::T.let(nil, ::T.untyped)
   DIR_PAGE_FOOTER = ::T.let(nil, ::T.untyped)
   DIR_PAGE_HEADER = ::T.let(nil, ::T.untyped)
   FILESIZE_FORMAT = ::T.let(nil, ::T.untyped)
 end
 
-class Rack::Directory::DirectoryBody
-end
-
-class Rack::Directory::DirectoryBody
-end
-
-class Rack::Directory
-end
-
 class Rack::ETag
   DEFAULT_CACHE_CONTROL = ::T.let(nil, ::T.untyped)
   ETAG_STRING = ::T.let(nil, ::T.untyped)
-end
-
-class Rack::Events
-  def call(env); end
-
-  def initialize(app, handlers); end
-end
-
-module Rack::Events::Abstract
-  def on_commit(req, res); end
-
-  def on_error(req, res, e); end
-
-  def on_finish(req, res); end
-
-  def on_send(req, res); end
-
-  def on_start(req, res); end
-end
-
-module Rack::Events::Abstract
-end
-
-class Rack::Events::BufferedResponse
-  def body(); end
-
-  def initialize(status, headers, body); end
-
-  def to_a(); end
-end
-
-class Rack::Events::BufferedResponse
-end
-
-class Rack::Events::EventedBodyProxy
-  def each(&blk); end
-
-  def initialize(body, request, response, handlers, &block); end
-
-  def request(); end
-
-  def response(); end
-end
-
-class Rack::Events::EventedBodyProxy
-end
-
-class Rack::Events
 end
 
 Rack::File = Rack::Files
@@ -18486,20 +18279,6 @@ class Rack::Files
   ALLOWED_VERBS = ::T.let(nil, ::T.untyped)
   ALLOW_HEADER = ::T.let(nil, ::T.untyped)
   MULTIPART_BOUNDARY = ::T.let(nil, ::T.untyped)
-end
-
-class Rack::ForwardRequest
-  def env(); end
-
-  def initialize(url, env=T.unsafe(nil)); end
-
-  def url(); end
-end
-
-class Rack::ForwardRequest
-end
-
-module Rack::Handler
 end
 
 class Rack::Handler::CGI
@@ -18527,180 +18306,23 @@ class Rack::Handler::WEBrick
   def self.valid_options(); end
 end
 
-module Rack::Handler
-  def self.default(); end
-
-  def self.get(server); end
-
-  def self.pick(server_names); end
-
-  def self.register(server, klass); end
-
-  def self.try_require(prefix, const_name); end
-end
-
-class Rack::Lint
-  include ::Rack::Lint::Assertion
-  def _call(env); end
-
-  def call(env=T.unsafe(nil)); end
-
-  def check_content_length(status, headers); end
-
-  def check_content_type(status, headers); end
-
-  def check_env(env); end
-
-  def check_error(error); end
-
-  def check_headers(header); end
-
-  def check_hijack(env); end
-
-  def check_hijack_response(headers, env); end
-
-  def check_input(input); end
-
-  def check_status(status); end
-
-  def close(); end
-
-  def each(&blk); end
-
-  def initialize(app); end
-
-  def verify_content_length(bytes); end
-end
-
-module Rack::Lint::Assertion
-  def assert(message); end
-end
-
-module Rack::Lint::Assertion
-end
-
-class Rack::Lint::ErrorWrapper
-  include ::Rack::Lint::Assertion
-  def close(*args); end
-
-  def flush(); end
-
-  def initialize(error); end
-
-  def puts(str); end
-
-  def write(str); end
-end
-
-class Rack::Lint::ErrorWrapper
-end
-
 class Rack::Lint::HijackWrapper
-  include ::Rack::Lint::Assertion
-  def close(*args, &block); end
-
-  def close_read(*args, &block); end
-
-  def close_write(*args, &block); end
-
-  def closed?(*args, &block); end
-
-  def flush(*args, &block); end
-
-  def initialize(io); end
-
-  def read(*args, &block); end
-
-  def read_nonblock(*args, &block); end
-
-  def write(*args, &block); end
-
-  def write_nonblock(*args, &block); end
   REQUIRED_METHODS = ::T.let(nil, ::T.untyped)
-end
-
-class Rack::Lint::HijackWrapper
-  extend ::Forwardable
-end
-
-class Rack::Lint::InputWrapper
-  include ::Rack::Lint::Assertion
-  def close(*args); end
-
-  def each(*args, &blk); end
-
-  def gets(*args); end
-
-  def initialize(input); end
-
-  def read(*args); end
-
-  def rewind(*args); end
-end
-
-class Rack::Lint::InputWrapper
-end
-
-class Rack::Lint::LintError
-end
-
-class Rack::Lint::LintError
-end
-
-class Rack::Lint
-end
-
-class Rack::Lock
-  def call(env); end
-
-  def initialize(app, mutex=T.unsafe(nil)); end
-end
-
-class Rack::Lock
-end
-
-class Rack::Logger
-  def call(env); end
-
-  def initialize(app, level=T.unsafe(nil)); end
-end
-
-class Rack::Logger
 end
 
 class Rack::MediaType
   SPLIT_PATTERN = ::T.let(nil, ::T.untyped)
 end
 
-class Rack::MediaType
-  def self.params(content_type); end
-
-  def self.type(content_type); end
-end
-
 class Rack::MethodOverride
-  def call(env); end
-
-  def initialize(app); end
-
-  def method_override(env); end
   ALLOWED_METHODS = ::T.let(nil, ::T.untyped)
   HTTP_METHODS = ::T.let(nil, ::T.untyped)
   HTTP_METHOD_OVERRIDE_HEADER = ::T.let(nil, ::T.untyped)
   METHOD_OVERRIDE_PARAM_KEY = ::T.let(nil, ::T.untyped)
 end
 
-class Rack::MethodOverride
-end
-
 module Rack::Mime
   MIME_TYPES = ::T.let(nil, ::T.untyped)
-end
-
-module Rack::Mime
-  def self.match?(value, matcher); end
-
-  def self.mime_type(ext, fallback=T.unsafe(nil)); end
 end
 
 class Rack::MockRequest
@@ -18744,100 +18366,13 @@ end
 class Rack::Multipart::Generator
 end
 
-class Rack::Multipart::MultipartPartLimitError
-end
-
-class Rack::Multipart::MultipartPartLimitError
-end
-
 class Rack::Multipart::Parser
-  def initialize(boundary, tempfile, bufsize, query_parser); end
-
-  def on_read(content); end
-
-  def result(); end
-
-  def state(); end
   BOUNDARY_REGEX = ::T.let(nil, ::T.untyped)
   BUFSIZE = ::T.let(nil, ::T.untyped)
   CHARSET = ::T.let(nil, ::T.untyped)
   EMPTY = ::T.let(nil, ::T.untyped)
   TEMPFILE_FACTORY = ::T.let(nil, ::T.untyped)
   TEXT_PLAIN = ::T.let(nil, ::T.untyped)
-end
-
-class Rack::Multipart::Parser::BoundedIO
-  def initialize(io, content_length); end
-
-  def read(size, outbuf=T.unsafe(nil)); end
-
-  def rewind(); end
-end
-
-class Rack::Multipart::Parser::BoundedIO
-end
-
-class Rack::Multipart::Parser::Collector
-  include ::Enumerable
-  def each(&blk); end
-
-  def initialize(tempfile); end
-
-  def on_mime_body(mime_index, content); end
-
-  def on_mime_finish(mime_index); end
-
-  def on_mime_head(mime_index, head, filename, content_type, name); end
-end
-
-class Rack::Multipart::Parser::Collector::BufferPart
-  def close(); end
-
-  def file?(); end
-end
-
-class Rack::Multipart::Parser::Collector::BufferPart
-end
-
-class Rack::Multipart::Parser::Collector::MimePart
-  def get_data(); end
-end
-
-class Rack::Multipart::Parser::Collector::MimePart
-end
-
-class Rack::Multipart::Parser::Collector::TempfilePart
-  def close(); end
-
-  def file?(); end
-end
-
-class Rack::Multipart::Parser::Collector::TempfilePart
-end
-
-class Rack::Multipart::Parser::Collector
-end
-
-class Rack::Multipart::Parser::MultipartInfo
-  def params(); end
-
-  def params=(_); end
-
-  def tmp_files(); end
-
-  def tmp_files=(_); end
-end
-
-class Rack::Multipart::Parser::MultipartInfo
-  def self.[](*_); end
-
-  def self.members(); end
-end
-
-class Rack::Multipart::Parser
-  def self.parse(io, content_length, content_type, tmpfile, bufsize, qp); end
-
-  def self.parse_boundary(content_type); end
 end
 
 class Rack::Multipart::UploadedFile
@@ -18861,111 +18396,9 @@ end
 class Rack::Multipart::UploadedFile
 end
 
-module Rack::Multipart
-  def self.build_multipart(params, first=T.unsafe(nil)); end
-
-  def self.extract_multipart(req, params=T.unsafe(nil)); end
-
-  def self.parse_multipart(env, params=T.unsafe(nil)); end
-end
-
-class Rack::NullLogger
-  def <<(msg); end
-
-  def add(severity, message=T.unsafe(nil), progname=T.unsafe(nil), &block); end
-
-  def call(env); end
-
-  def close(); end
-
-  def datetime_format(); end
-
-  def datetime_format=(datetime_format); end
-
-  def debug(progname=T.unsafe(nil), &block); end
-
-  def debug?(); end
-
-  def error(progname=T.unsafe(nil), &block); end
-
-  def error?(); end
-
-  def fatal(progname=T.unsafe(nil), &block); end
-
-  def fatal?(); end
-
-  def formatter(); end
-
-  def formatter=(formatter); end
-
-  def info(progname=T.unsafe(nil), &block); end
-
-  def info?(); end
-
-  def initialize(app); end
-
-  def level(); end
-
-  def level=(level); end
-
-  def progname(); end
-
-  def progname=(progname); end
-
-  def sev_threshold(); end
-
-  def sev_threshold=(sev_threshold); end
-
-  def unknown(progname=T.unsafe(nil), &block); end
-
-  def warn(progname=T.unsafe(nil), &block); end
-
-  def warn?(); end
-end
-
-class Rack::NullLogger
-end
-
 class Rack::QueryParser
   COMMON_SEP = ::T.let(nil, ::T.untyped)
   DEFAULT_SEP = ::T.let(nil, ::T.untyped)
-end
-
-class Rack::Recursive
-  def _call(env); end
-
-  def call(env); end
-
-  def include(env, path); end
-
-  def initialize(app); end
-end
-
-class Rack::Recursive
-end
-
-class Rack::Reloader
-  def call(env); end
-
-  def initialize(app, cooldown=T.unsafe(nil), backend=T.unsafe(nil)); end
-
-  def reload!(stderr=T.unsafe(nil)); end
-
-  def safe_load(file, mtime, stderr=T.unsafe(nil)); end
-end
-
-module Rack::Reloader::Stat
-  def figure_path(file, paths); end
-
-  def rotation(); end
-
-  def safe_stat(file); end
-end
-
-module Rack::Reloader::Stat
-end
-
-class Rack::Reloader
 end
 
 class Rack::Request
@@ -18990,63 +18423,9 @@ class Rack::Response
   STATUS_WITH_NO_ENTITY_BODY = ::T.let(nil, ::T.untyped)
 end
 
-class Rack::RewindableInput
-  def close(); end
-
-  def each(&block); end
-
-  def gets(); end
-
-  def initialize(io); end
-
-  def read(*args); end
-
-  def rewind(); end
-end
-
-class Rack::RewindableInput
-end
-
 class Rack::Runtime
   FORMAT_STRING = ::T.let(nil, ::T.untyped)
   HEADER_NAME = ::T.let(nil, ::T.untyped)
-end
-
-class Rack::Server
-  def app(); end
-
-  def default_options(); end
-
-  def initialize(options=T.unsafe(nil)); end
-
-  def middleware(); end
-
-  def options(); end
-
-  def options=(options); end
-
-  def server(); end
-
-  def start(&block); end
-end
-
-class Rack::Server::Options
-  def handler_opts(options); end
-
-  def parse!(args); end
-end
-
-class Rack::Server::Options
-end
-
-class Rack::Server
-  def self.default_middleware_by_environment(); end
-
-  def self.logging_middleware(); end
-
-  def self.middleware(); end
-
-  def self.start(options=T.unsafe(nil)); end
 end
 
 class Rack::Session::Abstract::Persisted
@@ -19057,78 +18436,11 @@ class Rack::Session::Abstract::SessionHash
   Unspecified = ::T.let(nil, ::T.untyped)
 end
 
-class Rack::Session::Cookie
-  def coder(); end
-end
-
-class Rack::Session::Cookie::Base64
-  def decode(str); end
-
-  def encode(str); end
-end
-
-class Rack::Session::Cookie::Base64::JSON
-  def encode(obj); end
-end
-
-class Rack::Session::Cookie::Base64::JSON
-end
-
-class Rack::Session::Cookie::Base64::Marshal
-end
-
-class Rack::Session::Cookie::Base64::Marshal
-end
-
-class Rack::Session::Cookie::Base64::ZipJSON
-  def encode(obj); end
-end
-
-class Rack::Session::Cookie::Base64::ZipJSON
-end
-
-class Rack::Session::Cookie::Base64
-end
-
-class Rack::Session::Cookie::Identity
-  def decode(str); end
-
-  def encode(str); end
-end
-
-class Rack::Session::Cookie::Identity
-end
-
 class Rack::Session::Cookie::SessionId
-  def cookie_value(); end
-
-  def initialize(session_id, cookie_value); end
-end
-
-class Rack::Session::Cookie::SessionId
-end
-
-class Rack::Session::Cookie
 end
 
 class Rack::Session::Pool
-  def delete_session(req, session_id, options); end
-
-  def find_session(req, sid); end
-
-  def generate_sid(); end
-
-  def mutex(); end
-
-  def pool(); end
-
-  def with_lock(req); end
-
-  def write_session(req, session_id, new_session, options); end
   DEFAULT_OPTIONS = ::T.let(nil, ::T.untyped)
-end
-
-class Rack::Session::Pool
 end
 
 class Rack::Session::SessionId
@@ -19136,64 +18448,12 @@ class Rack::Session::SessionId
 end
 
 class Rack::ShowExceptions
-  def call(env); end
-
-  def dump_exception(exception); end
-
-  def h(obj); end
-
-  def initialize(app); end
-
-  def prefers_plaintext?(env); end
-
-  def pretty(env, exception); end
-
-  def template(); end
   CONTEXT = ::T.let(nil, ::T.untyped)
   TEMPLATE = ::T.let(nil, ::T.untyped)
 end
 
-class Rack::ShowExceptions
-end
-
 class Rack::ShowStatus
-  def call(env); end
-
-  def h(obj); end
-
-  def initialize(app); end
   TEMPLATE = ::T.let(nil, ::T.untyped)
-end
-
-class Rack::ShowStatus
-end
-
-class Rack::Static
-  def add_index_root?(path); end
-
-  def applicable_rules(path); end
-
-  def call(env); end
-
-  def can_serve(path); end
-
-  def initialize(app, options=T.unsafe(nil)); end
-
-  def overwrite_file_path(path); end
-
-  def route_file(path); end
-end
-
-class Rack::Static
-end
-
-class Rack::TempfileReaper
-  def call(env); end
-
-  def initialize(app); end
-end
-
-class Rack::TempfileReaper
 end
 
 module Rack::Test
@@ -19208,17 +18468,6 @@ end
 
 module Rack::Test::Methods
   METHODS = ::T.let(nil, ::T.untyped)
-end
-
-class Rack::URLMap
-  def call(env); end
-
-  def initialize(map=T.unsafe(nil)); end
-
-  def remap(map); end
-end
-
-class Rack::URLMap
 end
 
 module Rack::Utils

@@ -55,9 +55,9 @@ module ActionMailbox
 end
 class ActionMailbox::Engine < Rails::Engine
 end
-module Anonymous_Module_33
+module Anonymous_Module_36
 end
-module Anonymous_Module_34
+module Anonymous_Module_37
 end
 class ActionMailbox::BaseController < ActionController::Base
   def _layout(lookup_context, formats); end
@@ -72,9 +72,9 @@ class ActionMailbox::BaseController < ActionController::Base
   def self.helpers_path; end
   def self.middleware_stack; end
   include ActionDispatch::Routing::UrlFor
-  include Anonymous_Module_35
+  include Anonymous_Module_38
 end
-module Anonymous_Module_35
+module Anonymous_Module_38
   def _generate_paths_by_default; end
   def _routes; end
   def self._routes; end
@@ -86,11 +86,11 @@ module Anonymous_Module_35
   def self.url_for(options); end
   def self.url_options; end
   extend ActiveSupport::Concern
-  extend Anonymous_Module_33
-  extend Anonymous_Module_34
+  extend Anonymous_Module_36
+  extend Anonymous_Module_37
   include ActionDispatch::Routing::UrlFor
-  include Anonymous_Module_33
-  include Anonymous_Module_34
+  include Anonymous_Module_36
+  include Anonymous_Module_37
 end
 class ActionMailbox::IncinerationJob < ActiveJob::Base
   def perform(inbound_email); end
@@ -150,7 +150,7 @@ class ActionMailbox::InboundEmail < ActiveRecord::Base
   include ActionMailbox::InboundEmail::GeneratedAssociationMethods
   include ActionMailbox::InboundEmail::GeneratedAttributeMethods
   include ActionMailbox::InboundEmail::Incineratable
-  include Anonymous_Module_36
+  include Anonymous_Module_39
 end
 module ActionMailbox::InboundEmail::GeneratedAssociationMethods
   def build_raw_email_attachment(*args, &block); end
@@ -193,7 +193,7 @@ class ActionMailbox::InboundEmail::ActiveRecord_AssociationRelation < ActiveReco
   include ActionMailbox::InboundEmail::GeneratedRelationMethods
   include ActiveRecord::Delegation::ClassSpecificRelation
 end
-module Anonymous_Module_36
+module Anonymous_Module_39
   def bounced!; end
   def bounced?; end
   def delivered!; end
@@ -219,9 +219,9 @@ class Rails::Conductor::BaseController < ActionController::Base
   def self.helpers_path; end
   def self.middleware_stack; end
   include ActionDispatch::Routing::UrlFor
-  include Anonymous_Module_37
+  include Anonymous_Module_40
 end
-module Anonymous_Module_37
+module Anonymous_Module_40
   def _generate_paths_by_default; end
   def _routes; end
   def self._routes; end
@@ -233,11 +233,11 @@ module Anonymous_Module_37
   def self.url_for(options); end
   def self.url_options; end
   extend ActiveSupport::Concern
-  extend Anonymous_Module_20
-  extend Anonymous_Module_21
+  extend Anonymous_Module_23
+  extend Anonymous_Module_24
   include ActionDispatch::Routing::UrlFor
-  include Anonymous_Module_20
-  include Anonymous_Module_21
+  include Anonymous_Module_23
+  include Anonymous_Module_24
 end
 class ActionMailbox::Ingresses::Postmark::InboundEmailsController < ActionMailbox::BaseController
   def _layout(lookup_context, formats); end
@@ -249,9 +249,9 @@ class ActionMailbox::Ingresses::Postmark::InboundEmailsController < ActionMailbo
   def self.helpers_path; end
   def self.middleware_stack; end
   include ActionDispatch::Routing::UrlFor
-  include Anonymous_Module_38
+  include Anonymous_Module_41
 end
-module Anonymous_Module_38
+module Anonymous_Module_41
   def _generate_paths_by_default; end
   def _routes; end
   def self._routes; end
@@ -263,11 +263,11 @@ module Anonymous_Module_38
   def self.url_for(options); end
   def self.url_options; end
   extend ActiveSupport::Concern
-  extend Anonymous_Module_33
-  extend Anonymous_Module_34
+  extend Anonymous_Module_36
+  extend Anonymous_Module_37
   include ActionDispatch::Routing::UrlFor
-  include Anonymous_Module_33
-  include Anonymous_Module_34
+  include Anonymous_Module_36
+  include Anonymous_Module_37
 end
 class ActionMailbox::Ingresses::Sendgrid::InboundEmailsController < ActionMailbox::BaseController
   def _layout(lookup_context, formats); end
@@ -279,9 +279,9 @@ class ActionMailbox::Ingresses::Sendgrid::InboundEmailsController < ActionMailbo
   def self.helpers_path; end
   def self.middleware_stack; end
   include ActionDispatch::Routing::UrlFor
-  include Anonymous_Module_39
+  include Anonymous_Module_42
 end
-module Anonymous_Module_39
+module Anonymous_Module_42
   def _generate_paths_by_default; end
   def _routes; end
   def self._routes; end
@@ -293,11 +293,11 @@ module Anonymous_Module_39
   def self.url_for(options); end
   def self.url_options; end
   extend ActiveSupport::Concern
-  extend Anonymous_Module_33
-  extend Anonymous_Module_34
+  extend Anonymous_Module_36
+  extend Anonymous_Module_37
   include ActionDispatch::Routing::UrlFor
-  include Anonymous_Module_33
-  include Anonymous_Module_34
+  include Anonymous_Module_36
+  include Anonymous_Module_37
 end
 class ActionMailbox::Ingresses::Mandrill::InboundEmailsController < ActionMailbox::BaseController
   def _layout(lookup_context, formats); end
@@ -315,9 +315,9 @@ class ActionMailbox::Ingresses::Mandrill::InboundEmailsController < ActionMailbo
   def self.helpers_path; end
   def self.middleware_stack; end
   include ActionDispatch::Routing::UrlFor
-  include Anonymous_Module_40
+  include Anonymous_Module_43
 end
-module Anonymous_Module_40
+module Anonymous_Module_43
   def _generate_paths_by_default; end
   def _routes; end
   def self._routes; end
@@ -329,11 +329,11 @@ module Anonymous_Module_40
   def self.url_for(options); end
   def self.url_options; end
   extend ActiveSupport::Concern
-  extend Anonymous_Module_33
-  extend Anonymous_Module_34
+  extend Anonymous_Module_36
+  extend Anonymous_Module_37
   include ActionDispatch::Routing::UrlFor
-  include Anonymous_Module_33
-  include Anonymous_Module_34
+  include Anonymous_Module_36
+  include Anonymous_Module_37
 end
 class ActionMailbox::Ingresses::Mandrill::InboundEmailsController::Authenticator
   def authenticated?; end
@@ -357,9 +357,9 @@ class ActionMailbox::Ingresses::Mailgun::InboundEmailsController < ActionMailbox
   def self.helpers_path; end
   def self.middleware_stack; end
   include ActionDispatch::Routing::UrlFor
-  include Anonymous_Module_41
+  include Anonymous_Module_44
 end
-module Anonymous_Module_41
+module Anonymous_Module_44
   def _generate_paths_by_default; end
   def _routes; end
   def self._routes; end
@@ -371,11 +371,11 @@ module Anonymous_Module_41
   def self.url_for(options); end
   def self.url_options; end
   extend ActiveSupport::Concern
-  extend Anonymous_Module_33
-  extend Anonymous_Module_34
+  extend Anonymous_Module_36
+  extend Anonymous_Module_37
   include ActionDispatch::Routing::UrlFor
-  include Anonymous_Module_33
-  include Anonymous_Module_34
+  include Anonymous_Module_36
+  include Anonymous_Module_37
 end
 class ActionMailbox::Ingresses::Mailgun::InboundEmailsController::Authenticator
   def authenticated?; end
@@ -399,9 +399,9 @@ class ActionMailbox::Ingresses::Relay::InboundEmailsController < ActionMailbox::
   def self.helpers_path; end
   def self.middleware_stack; end
   include ActionDispatch::Routing::UrlFor
-  include Anonymous_Module_42
+  include Anonymous_Module_45
 end
-module Anonymous_Module_42
+module Anonymous_Module_45
   def _generate_paths_by_default; end
   def _routes; end
   def self._routes; end
@@ -413,11 +413,11 @@ module Anonymous_Module_42
   def self.url_for(options); end
   def self.url_options; end
   extend ActiveSupport::Concern
-  extend Anonymous_Module_33
-  extend Anonymous_Module_34
+  extend Anonymous_Module_36
+  extend Anonymous_Module_37
   include ActionDispatch::Routing::UrlFor
-  include Anonymous_Module_33
-  include Anonymous_Module_34
+  include Anonymous_Module_36
+  include Anonymous_Module_37
 end
 class Rails::Conductor::ActionMailbox::InboundEmailsController < Rails::Conductor::BaseController
   def _layout(lookup_context, formats); end
@@ -433,9 +433,9 @@ class Rails::Conductor::ActionMailbox::InboundEmailsController < Rails::Conducto
   def self.middleware_stack; end
   def show; end
   include ActionDispatch::Routing::UrlFor
-  include Anonymous_Module_43
+  include Anonymous_Module_46
 end
-module Anonymous_Module_43
+module Anonymous_Module_46
   def _generate_paths_by_default; end
   def _routes; end
   def self._routes; end
@@ -447,11 +447,11 @@ module Anonymous_Module_43
   def self.url_for(options); end
   def self.url_options; end
   extend ActiveSupport::Concern
-  extend Anonymous_Module_20
-  extend Anonymous_Module_21
+  extend Anonymous_Module_23
+  extend Anonymous_Module_24
   include ActionDispatch::Routing::UrlFor
-  include Anonymous_Module_20
-  include Anonymous_Module_21
+  include Anonymous_Module_23
+  include Anonymous_Module_24
 end
 class Rails::Conductor::ActionMailbox::ReroutesController < Rails::Conductor::BaseController
   def _layout(lookup_context, formats); end
@@ -463,9 +463,9 @@ class Rails::Conductor::ActionMailbox::ReroutesController < Rails::Conductor::Ba
   def self.helpers_path; end
   def self.middleware_stack; end
   include ActionDispatch::Routing::UrlFor
-  include Anonymous_Module_44
+  include Anonymous_Module_47
 end
-module Anonymous_Module_44
+module Anonymous_Module_47
   def _generate_paths_by_default; end
   def _routes; end
   def self._routes; end
@@ -477,11 +477,11 @@ module Anonymous_Module_44
   def self.url_for(options); end
   def self.url_options; end
   extend ActiveSupport::Concern
-  extend Anonymous_Module_20
-  extend Anonymous_Module_21
+  extend Anonymous_Module_23
+  extend Anonymous_Module_24
   include ActionDispatch::Routing::UrlFor
-  include Anonymous_Module_20
-  include Anonymous_Module_21
+  include Anonymous_Module_23
+  include Anonymous_Module_24
 end
 class ActionMailbox::InboundEmail::Incineratable::Incineration
   def due?; end

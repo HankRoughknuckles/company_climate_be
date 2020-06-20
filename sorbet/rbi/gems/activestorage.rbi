@@ -182,9 +182,9 @@ module ActiveStorage::Reflection::ActiveRecordExtensions::ClassMethods
 end
 class ActiveStorage::Engine < Rails::Engine
 end
-module Anonymous_Module_22
+module Anonymous_Module_25
 end
-module Anonymous_Module_23
+module Anonymous_Module_26
 end
 module ActiveStorage::Attached::Model
   def attachment_changes; end
@@ -239,9 +239,9 @@ class ActiveStorage::BaseController < ActionController::Base
   def self.middleware_stack; end
   include ActionDispatch::Routing::UrlFor
   include ActiveStorage::SetCurrent
-  include Anonymous_Module_24
+  include Anonymous_Module_27
 end
-module Anonymous_Module_24
+module Anonymous_Module_27
   def _generate_paths_by_default; end
   def _routes; end
   def self._routes; end
@@ -253,11 +253,11 @@ module Anonymous_Module_24
   def self.url_for(options); end
   def self.url_options; end
   extend ActiveSupport::Concern
-  extend Anonymous_Module_22
-  extend Anonymous_Module_23
+  extend Anonymous_Module_25
+  extend Anonymous_Module_26
   include ActionDispatch::Routing::UrlFor
-  include Anonymous_Module_22
-  include Anonymous_Module_23
+  include Anonymous_Module_25
+  include Anonymous_Module_26
 end
 class ActiveStorage::DirectUploadsController < ActiveStorage::BaseController
   def _layout(lookup_context, formats); end
@@ -270,9 +270,9 @@ class ActiveStorage::DirectUploadsController < ActiveStorage::BaseController
   def self.helpers_path; end
   def self.middleware_stack; end
   include ActionDispatch::Routing::UrlFor
-  include Anonymous_Module_25
+  include Anonymous_Module_28
 end
-module Anonymous_Module_25
+module Anonymous_Module_28
   def _generate_paths_by_default; end
   def _routes; end
   def self._routes; end
@@ -284,11 +284,11 @@ module Anonymous_Module_25
   def self.url_for(options); end
   def self.url_options; end
   extend ActiveSupport::Concern
-  extend Anonymous_Module_22
-  extend Anonymous_Module_23
+  extend Anonymous_Module_25
+  extend Anonymous_Module_26
   include ActionDispatch::Routing::UrlFor
-  include Anonymous_Module_22
-  include Anonymous_Module_23
+  include Anonymous_Module_25
+  include Anonymous_Module_26
 end
 module ActiveStorage::SetBlob
   def set_blob; end
@@ -305,9 +305,9 @@ class ActiveStorage::BlobsController < ActiveStorage::BaseController
   def show; end
   include ActionDispatch::Routing::UrlFor
   include ActiveStorage::SetBlob
-  include Anonymous_Module_26
+  include Anonymous_Module_29
 end
-module Anonymous_Module_26
+module Anonymous_Module_29
   def _generate_paths_by_default; end
   def _routes; end
   def self._routes; end
@@ -319,11 +319,11 @@ module Anonymous_Module_26
   def self.url_for(options); end
   def self.url_options; end
   extend ActiveSupport::Concern
-  extend Anonymous_Module_22
-  extend Anonymous_Module_23
+  extend Anonymous_Module_25
+  extend Anonymous_Module_26
   include ActionDispatch::Routing::UrlFor
-  include Anonymous_Module_22
-  include Anonymous_Module_23
+  include Anonymous_Module_25
+  include Anonymous_Module_26
 end
 class ActiveStorage::RepresentationsController < ActiveStorage::BaseController
   def _layout(lookup_context, formats); end
@@ -336,9 +336,9 @@ class ActiveStorage::RepresentationsController < ActiveStorage::BaseController
   def show; end
   include ActionDispatch::Routing::UrlFor
   include ActiveStorage::SetBlob
-  include Anonymous_Module_27
+  include Anonymous_Module_30
 end
-module Anonymous_Module_27
+module Anonymous_Module_30
   def _generate_paths_by_default; end
   def _routes; end
   def self._routes; end
@@ -350,11 +350,11 @@ module Anonymous_Module_27
   def self.url_for(options); end
   def self.url_options; end
   extend ActiveSupport::Concern
-  extend Anonymous_Module_22
-  extend Anonymous_Module_23
+  extend Anonymous_Module_25
+  extend Anonymous_Module_26
   include ActionDispatch::Routing::UrlFor
-  include Anonymous_Module_22
-  include Anonymous_Module_23
+  include Anonymous_Module_25
+  include Anonymous_Module_26
 end
 class ActiveStorage::DiskController < ActiveStorage::BaseController
   def _layout(lookup_context, formats); end
@@ -372,9 +372,9 @@ class ActiveStorage::DiskController < ActiveStorage::BaseController
   def show; end
   def update; end
   include ActionDispatch::Routing::UrlFor
-  include Anonymous_Module_28
+  include Anonymous_Module_31
 end
-module Anonymous_Module_28
+module Anonymous_Module_31
   def _generate_paths_by_default; end
   def _routes; end
   def self._routes; end
@@ -386,11 +386,11 @@ module Anonymous_Module_28
   def self.url_for(options); end
   def self.url_options; end
   extend ActiveSupport::Concern
-  extend Anonymous_Module_22
-  extend Anonymous_Module_23
+  extend Anonymous_Module_25
+  extend Anonymous_Module_26
   include ActionDispatch::Routing::UrlFor
-  include Anonymous_Module_22
-  include Anonymous_Module_23
+  include Anonymous_Module_25
+  include Anonymous_Module_26
 end
 class ActiveStorage::BaseJob < ActiveJob::Base
 end
@@ -598,7 +598,7 @@ class ActiveStorage::Blob < ActiveRecord::Base
   include ActiveStorage::Blob::GeneratedAttributeMethods
   include ActiveStorage::Blob::Identifiable
   include ActiveStorage::Blob::Representable
-  include Anonymous_Module_29
+  include Anonymous_Module_32
 end
 module ActiveStorage::Blob::GeneratedAssociationMethods
   def attachment_ids; end
@@ -636,7 +636,7 @@ class ActiveStorage::Blob::ActiveRecord_AssociationRelation < ActiveRecord::Asso
   include ActiveRecord::Delegation::ClassSpecificRelation
   include ActiveStorage::Blob::GeneratedRelationMethods
 end
-module Anonymous_Module_29
+module Anonymous_Module_32
   def analyzed; end
   def analyzed=(value); end
   def analyzed_before_last_save; end
@@ -730,9 +730,9 @@ end
 class ActiveStorage::Current < ActiveSupport::CurrentAttributes
   def self.host; end
   def self.host=(attribute); end
-  include Anonymous_Module_30
+  include Anonymous_Module_33
 end
-module Anonymous_Module_30
+module Anonymous_Module_33
   def host; end
   def host=(attribute); end
 end

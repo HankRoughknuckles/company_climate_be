@@ -1074,26 +1074,26 @@
 # uninitialized constant ActiveRecord::ConnectionAdapters::PostgreSQLAdapter::MONEY_COLUMN_TYPE_OID
 # uninitialized constant ActiveRecord::ConnectionAdapters::PostgreSQLAdapter::SIMPLE_INT
 # wrong constant name collect?
-# uninitialized constant #<Class:0x00007f93a1d2d200>::ACTIONS
+# uninitialized constant #<Class:0x00007ff9a2949eb0>::ACTIONS
 # Did you mean?  ActiveRecord::InternalMetadata::ACTIONS
-# uninitialized constant #<Class:0x00007f93a1d2d200>::CALLBACKS
+# uninitialized constant #<Class:0x00007ff9a2949eb0>::CALLBACKS
 # Did you mean?  ActiveRecord::Callbacks
 #                ActiveRecord::InternalMetadata::Callbacks
 #                ActiveRecord::InternalMetadata::Callback
 #                ActiveRecord::InternalMetadata::CALLBACKS
-# uninitialized constant #<Class:0x00007f93a1d2d200>::CALLBACK_FILTER_TYPES
+# uninitialized constant #<Class:0x00007ff9a2949eb0>::CALLBACK_FILTER_TYPES
 # Did you mean?  ActiveRecord::InternalMetadata::CALLBACK_FILTER_TYPES
-# uninitialized constant #<Class:0x00007f93a1d2d200>::CALL_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007ff9a2949eb0>::CALL_COMPILABLE_REGEXP
 # Did you mean?  ActiveRecord::InternalMetadata::CALL_COMPILABLE_REGEXP
 # wrong constant name <Class:GeneratedAssociationMethods>
 # wrong constant name <Class:GeneratedAttributeMethods>
-# uninitialized constant #<Class:0x00007f93a1d2d200>::MAX_PASSWORD_LENGTH_ALLOWED
+# uninitialized constant #<Class:0x00007ff9a2949eb0>::MAX_PASSWORD_LENGTH_ALLOWED
 # Did you mean?  ActiveRecord::InternalMetadata::MAX_PASSWORD_LENGTH_ALLOWED
-# uninitialized constant #<Class:0x00007f93a1d2d200>::NAME_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007ff9a2949eb0>::NAME_COMPILABLE_REGEXP
 # Did you mean?  ActiveRecord::InternalMetadata::NAME_COMPILABLE_REGEXP
-# uninitialized constant #<Class:0x00007f93a1d2d200>::RESTRICTED_CLASS_METHODS
+# uninitialized constant #<Class:0x00007ff9a2949eb0>::RESTRICTED_CLASS_METHODS
 # Did you mean?  ActiveRecord::InternalMetadata::RESTRICTED_CLASS_METHODS
-# uninitialized constant #<Class:0x00007f93a1d2d200>::UNASSIGNABLE_KEYS
+# uninitialized constant #<Class:0x00007ff9a2949eb0>::UNASSIGNABLE_KEYS
 # Did you mean?  ActiveRecord::InternalMetadata::UNASSIGNABLE_KEYS
 # wrong constant name <static-init>
 # wrong constant name <static-init>
@@ -4088,25 +4088,25 @@
 # uninitialized constant Class::DELEGATION_RESERVED_METHOD_NAMES
 # uninitialized constant Class::RUBY_RESERVED_KEYWORDS
 # wrong constant name json_creatable?
-# uninitialized constant #<Class:0x00007f93a2757550>::ACTIONS
+# uninitialized constant #<Class:0x00007ff99c5eb7d8>::ACTIONS
 # Did you mean?  Company::ACTIONS
-# uninitialized constant #<Class:0x00007f93a2757550>::CALLBACKS
+# uninitialized constant #<Class:0x00007ff99c5eb7d8>::CALLBACKS
 # Did you mean?  Company::Callbacks
 #                Company::Callback
 #                Company::CALLBACKS
-# uninitialized constant #<Class:0x00007f93a2757550>::CALLBACK_FILTER_TYPES
+# uninitialized constant #<Class:0x00007ff99c5eb7d8>::CALLBACK_FILTER_TYPES
 # Did you mean?  Company::CALLBACK_FILTER_TYPES
-# uninitialized constant #<Class:0x00007f93a2757550>::CALL_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007ff99c5eb7d8>::CALL_COMPILABLE_REGEXP
 # Did you mean?  Company::CALL_COMPILABLE_REGEXP
 # wrong constant name <Class:GeneratedAssociationMethods>
 # wrong constant name <Class:GeneratedAttributeMethods>
-# uninitialized constant #<Class:0x00007f93a2757550>::MAX_PASSWORD_LENGTH_ALLOWED
+# uninitialized constant #<Class:0x00007ff99c5eb7d8>::MAX_PASSWORD_LENGTH_ALLOWED
 # Did you mean?  Company::MAX_PASSWORD_LENGTH_ALLOWED
-# uninitialized constant #<Class:0x00007f93a2757550>::NAME_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007ff99c5eb7d8>::NAME_COMPILABLE_REGEXP
 # Did you mean?  Company::NAME_COMPILABLE_REGEXP
-# uninitialized constant #<Class:0x00007f93a2757550>::RESTRICTED_CLASS_METHODS
+# uninitialized constant #<Class:0x00007ff99c5eb7d8>::RESTRICTED_CLASS_METHODS
 # Did you mean?  Company::RESTRICTED_CLASS_METHODS
-# uninitialized constant #<Class:0x00007f93a2757550>::UNASSIGNABLE_KEYS
+# uninitialized constant #<Class:0x00007ff99c5eb7d8>::UNASSIGNABLE_KEYS
 # Did you mean?  Company::UNASSIGNABLE_KEYS
 # wrong constant name after_add_for_company_tasks
 # wrong constant name after_add_for_company_tasks=
@@ -4332,25 +4332,25 @@
 # wrong constant name before_remove_for_years
 # wrong constant name before_remove_for_years=
 # wrong constant name before_remove_for_years?
-# uninitialized constant #<Class:0x00007f93a2734af0>::ACTIONS
+# uninitialized constant #<Class:0x00007ff99c605688>::ACTIONS
 # Did you mean?  CompanyTask::ACTIONS
-# uninitialized constant #<Class:0x00007f93a2734af0>::CALLBACKS
+# uninitialized constant #<Class:0x00007ff99c605688>::CALLBACKS
 # Did you mean?  CompanyTask::Callbacks
 #                CompanyTask::Callback
 #                CompanyTask::CALLBACKS
-# uninitialized constant #<Class:0x00007f93a2734af0>::CALLBACK_FILTER_TYPES
+# uninitialized constant #<Class:0x00007ff99c605688>::CALLBACK_FILTER_TYPES
 # Did you mean?  CompanyTask::CALLBACK_FILTER_TYPES
-# uninitialized constant #<Class:0x00007f93a2734af0>::CALL_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007ff99c605688>::CALL_COMPILABLE_REGEXP
 # Did you mean?  CompanyTask::CALL_COMPILABLE_REGEXP
 # wrong constant name <Class:GeneratedAssociationMethods>
 # wrong constant name <Class:GeneratedAttributeMethods>
-# uninitialized constant #<Class:0x00007f93a2734af0>::MAX_PASSWORD_LENGTH_ALLOWED
+# uninitialized constant #<Class:0x00007ff99c605688>::MAX_PASSWORD_LENGTH_ALLOWED
 # Did you mean?  CompanyTask::MAX_PASSWORD_LENGTH_ALLOWED
-# uninitialized constant #<Class:0x00007f93a2734af0>::NAME_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007ff99c605688>::NAME_COMPILABLE_REGEXP
 # Did you mean?  CompanyTask::NAME_COMPILABLE_REGEXP
-# uninitialized constant #<Class:0x00007f93a2734af0>::RESTRICTED_CLASS_METHODS
+# uninitialized constant #<Class:0x00007ff99c605688>::RESTRICTED_CLASS_METHODS
 # Did you mean?  CompanyTask::RESTRICTED_CLASS_METHODS
-# uninitialized constant #<Class:0x00007f93a2734af0>::UNASSIGNABLE_KEYS
+# uninitialized constant #<Class:0x00007ff99c605688>::UNASSIGNABLE_KEYS
 # Did you mean?  CompanyTask::UNASSIGNABLE_KEYS
 # wrong constant name autosave_associated_records_for_company
 # wrong constant name autosave_associated_records_for_task
@@ -4368,25 +4368,25 @@
 # wrong constant name task=
 # wrong constant name <static-init>
 # wrong constant name <static-init>
-# uninitialized constant #<Class:0x00007f93a27133a0>::ACTIONS
+# uninitialized constant #<Class:0x00007ff99c5b1da8>::ACTIONS
 # Did you mean?  CompanyYear::ACTIONS
-# uninitialized constant #<Class:0x00007f93a27133a0>::CALLBACKS
+# uninitialized constant #<Class:0x00007ff99c5b1da8>::CALLBACKS
 # Did you mean?  CompanyYear::Callbacks
 #                CompanyYear::Callback
 #                CompanyYear::CALLBACKS
-# uninitialized constant #<Class:0x00007f93a27133a0>::CALLBACK_FILTER_TYPES
+# uninitialized constant #<Class:0x00007ff99c5b1da8>::CALLBACK_FILTER_TYPES
 # Did you mean?  CompanyYear::CALLBACK_FILTER_TYPES
-# uninitialized constant #<Class:0x00007f93a27133a0>::CALL_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007ff99c5b1da8>::CALL_COMPILABLE_REGEXP
 # Did you mean?  CompanyYear::CALL_COMPILABLE_REGEXP
 # wrong constant name <Class:GeneratedAssociationMethods>
 # wrong constant name <Class:GeneratedAttributeMethods>
-# uninitialized constant #<Class:0x00007f93a27133a0>::MAX_PASSWORD_LENGTH_ALLOWED
+# uninitialized constant #<Class:0x00007ff99c5b1da8>::MAX_PASSWORD_LENGTH_ALLOWED
 # Did you mean?  CompanyYear::MAX_PASSWORD_LENGTH_ALLOWED
-# uninitialized constant #<Class:0x00007f93a27133a0>::NAME_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007ff99c5b1da8>::NAME_COMPILABLE_REGEXP
 # Did you mean?  CompanyYear::NAME_COMPILABLE_REGEXP
-# uninitialized constant #<Class:0x00007f93a27133a0>::RESTRICTED_CLASS_METHODS
+# uninitialized constant #<Class:0x00007ff99c5b1da8>::RESTRICTED_CLASS_METHODS
 # Did you mean?  CompanyYear::RESTRICTED_CLASS_METHODS
-# uninitialized constant #<Class:0x00007f93a27133a0>::UNASSIGNABLE_KEYS
+# uninitialized constant #<Class:0x00007ff99c5b1da8>::UNASSIGNABLE_KEYS
 # Did you mean?  CompanyYear::UNASSIGNABLE_KEYS
 # wrong constant name autosave_associated_records_for_company
 # wrong constant name autosave_associated_records_for_year
@@ -4988,6 +4988,7 @@
 # wrong constant name exists?
 # wrong constant name lutime
 # wrong constant name mkfifo
+# wrong constant name probe_stat_in
 # uninitialized constant FileUtils::DryRun::LN_SUPPORTED
 # Did you mean?  FileUtils::LN_SUPPORTED
 # uninitialized constant FileUtils::DryRun::RUBY
@@ -13651,106 +13652,6 @@
 # wrong constant name <Class:CparseParams>
 # wrong constant name <static-init>
 # wrong constant name <Class:Builder>
-# wrong constant name <Class:Cascade>
-# wrong constant name <Class:CommonLogger>
-# wrong constant name <Class:Config>
-# wrong constant name <Class:ContentLength>
-# wrong constant name <Class:ContentType>
-# wrong constant name <Class:Deflater>
-# wrong constant name <Class:Directory>
-# wrong constant name <Class:Events>
-# wrong constant name <Class:ForwardRequest>
-# wrong constant name <Class:Handler>
-# wrong constant name <Class:Lint>
-# wrong constant name <Class:Lock>
-# wrong constant name <Class:Logger>
-# wrong constant name <Class:MediaType>
-# wrong constant name <Class:MethodOverride>
-# wrong constant name <Class:Mime>
-# wrong constant name <Class:Multipart>
-# wrong constant name <Class:NullLogger>
-# wrong constant name <Class:Recursive>
-# wrong constant name <Class:Reloader>
-# wrong constant name <Class:RewindableInput>
-# wrong constant name <Class:Server>
-# wrong constant name <Class:ShowExceptions>
-# wrong constant name <Class:ShowStatus>
-# wrong constant name <Class:Static>
-# wrong constant name <Class:TempfileReaper>
-# wrong constant name <Class:URLMap>
-# undefined method `initialize<defaultArg>1' for class `Rack::Auth::AbstractHandler'
-# Did you mean?  initialize_dup
-# wrong constant name initialize<defaultArg>1
-# wrong constant name initialize
-# wrong constant name realm
-# wrong constant name realm=
-# wrong constant name <static-init>
-# wrong constant name initialize
-# wrong constant name params
-# wrong constant name parts
-# wrong constant name provided?
-# wrong constant name request
-# wrong constant name scheme
-# wrong constant name valid?
-# wrong constant name <static-init>
-# wrong constant name <Class:Request>
-# wrong constant name call
-# uninitialized constant Rack::Auth::Basic::Request::AUTHORIZATION_KEYS
-# wrong constant name basic?
-# wrong constant name credentials
-# wrong constant name username
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# undefined method `initialize<defaultArg>1' for class `Rack::Auth::Digest::MD5'
-# Did you mean?  initialize_dup
-# undefined method `initialize<defaultArg>2' for class `Rack::Auth::Digest::MD5'
-# Did you mean?  initialize_dup
-# wrong constant name call
-# wrong constant name initialize<defaultArg>1
-# wrong constant name initialize<defaultArg>2
-# wrong constant name initialize
-# wrong constant name opaque
-# wrong constant name opaque=
-# wrong constant name passwords_hashed=
-# wrong constant name passwords_hashed?
-# wrong constant name <static-init>
-# undefined method `initialize<defaultArg>1' for class `Rack::Auth::Digest::Nonce'
-# Did you mean?  initialize_dup
-# undefined method `initialize<defaultArg>2' for class `Rack::Auth::Digest::Nonce'
-# Did you mean?  initialize_dup
-# wrong constant name digest
-# wrong constant name fresh?
-# wrong constant name initialize<defaultArg>1
-# wrong constant name initialize<defaultArg>2
-# wrong constant name initialize
-# wrong constant name stale?
-# wrong constant name valid?
-# wrong constant name <static-init>
-# wrong constant name parse
-# wrong constant name private_key
-# wrong constant name private_key=
-# wrong constant name time_limit
-# wrong constant name time_limit=
-# uninitialized constant Rack::Auth::Digest::Params::Elem
-# uninitialized constant Rack::Auth::Digest::Params::K
-# uninitialized constant Rack::Auth::Digest::Params::V
-# Did you mean?  V1
-# wrong constant name []
-# wrong constant name []=
-# wrong constant name initialize
-# wrong constant name quote
-# wrong constant name <static-init>
-# wrong constant name dequote
-# wrong constant name parse
-# wrong constant name split_header_value
-# uninitialized constant Rack::Auth::Digest::Request::AUTHORIZATION_KEYS
-# wrong constant name correct_uri?
-# wrong constant name digest?
-# wrong constant name method
-# wrong constant name method_missing
-# wrong constant name nonce
-# wrong constant name respond_to?
-# wrong constant name <static-init>
 # undefined method `initialize<defaultArg>1' for class `Rack::Builder'
 # Did you mean?  initialize_dup
 # undefined method `warmup<defaultArg>1' for class `Rack::Builder'
@@ -13777,111 +13678,6 @@
 # wrong constant name new_from_string
 # wrong constant name parse_file<defaultArg>1
 # wrong constant name parse_file
-# undefined method `initialize<defaultArg>1' for class `Rack::Cascade'
-# Did you mean?  initialize_dup
-# wrong constant name <<
-# wrong constant name add
-# wrong constant name apps
-# wrong constant name call
-# wrong constant name include?
-# wrong constant name initialize<defaultArg>1
-# wrong constant name initialize
-# wrong constant name <static-init>
-# undefined method `initialize<defaultArg>1' for class `Rack::CommonLogger'
-# Did you mean?  initialize_dup
-# wrong constant name call
-# wrong constant name initialize<defaultArg>1
-# wrong constant name initialize
-# wrong constant name <static-init>
-# wrong constant name call
-# wrong constant name initialize
-# wrong constant name <static-init>
-# uninitialized constant Rack::ContentLength::COMMON_SEP
-# uninitialized constant Rack::ContentLength::DEFAULT_SEP
-# uninitialized constant Rack::ContentLength::ESCAPE_HTML
-# uninitialized constant Rack::ContentLength::ESCAPE_HTML_PATTERN
-# uninitialized constant Rack::ContentLength::HTTP_STATUS_CODES
-# uninitialized constant Rack::ContentLength::NULL_BYTE
-# uninitialized constant Rack::ContentLength::PATH_SEPS
-# uninitialized constant Rack::ContentLength::STATUS_WITH_NO_ENTITY_BODY
-# uninitialized constant Rack::ContentLength::SYMBOL_TO_STATUS_CODE
-# wrong constant name call
-# wrong constant name initialize
-# wrong constant name <static-init>
-# undefined method `initialize<defaultArg>1' for class `Rack::ContentType'
-# Did you mean?  initialize_dup
-# uninitialized constant Rack::ContentType::COMMON_SEP
-# uninitialized constant Rack::ContentType::DEFAULT_SEP
-# uninitialized constant Rack::ContentType::ESCAPE_HTML
-# uninitialized constant Rack::ContentType::ESCAPE_HTML_PATTERN
-# uninitialized constant Rack::ContentType::HTTP_STATUS_CODES
-# uninitialized constant Rack::ContentType::NULL_BYTE
-# uninitialized constant Rack::ContentType::PATH_SEPS
-# uninitialized constant Rack::ContentType::STATUS_WITH_NO_ENTITY_BODY
-# uninitialized constant Rack::ContentType::SYMBOL_TO_STATUS_CODE
-# wrong constant name call
-# wrong constant name initialize<defaultArg>1
-# wrong constant name initialize
-# wrong constant name <static-init>
-# undefined method `initialize<defaultArg>1' for class `Rack::Deflater'
-# Did you mean?  initialize_dup
-# wrong constant name <Class:GzipStream>
-# wrong constant name call
-# wrong constant name initialize<defaultArg>1
-# wrong constant name initialize
-# wrong constant name close
-# wrong constant name each
-# wrong constant name initialize
-# wrong constant name write
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# undefined method `initialize<defaultArg>1' for class `Rack::Directory'
-# Did you mean?  initialize_dup
-# wrong constant name <Class:DirectoryBody>
-# wrong constant name call
-# wrong constant name check_bad_request
-# wrong constant name check_forbidden
-# wrong constant name entity_not_found
-# wrong constant name filesize_format
-# wrong constant name get
-# wrong constant name initialize<defaultArg>1
-# wrong constant name initialize
-# wrong constant name list_directory
-# wrong constant name list_path
-# wrong constant name root
-# wrong constant name stat
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <Class:Abstract>
-# wrong constant name <Class:BufferedResponse>
-# wrong constant name <Class:EventedBodyProxy>
-# wrong constant name call
-# wrong constant name initialize
-# wrong constant name on_commit
-# wrong constant name on_error
-# wrong constant name on_finish
-# wrong constant name on_send
-# wrong constant name on_start
-# wrong constant name <static-init>
-# wrong constant name body
-# wrong constant name initialize
-# wrong constant name to_a
-# wrong constant name <static-init>
-# wrong constant name each
-# wrong constant name initialize
-# wrong constant name request
-# wrong constant name response
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# undefined method `initialize<defaultArg>1' for class `Rack::ForwardRequest'
-# Did you mean?  initialize_dup
-# wrong constant name env
-# wrong constant name initialize<defaultArg>1
-# wrong constant name initialize
-# wrong constant name url
-# wrong constant name <static-init>
-# wrong constant name <Class:CGI>
-# wrong constant name <Class:WEBrick>
 # wrong constant name <static-init>
 # wrong constant name run
 # wrong constant name send_body
@@ -13892,89 +13688,7 @@
 # wrong constant name run
 # wrong constant name shutdown
 # wrong constant name valid_options
-# wrong constant name <static-init>
-# wrong constant name default
-# wrong constant name get
-# wrong constant name pick
-# wrong constant name register
-# wrong constant name try_require
-# undefined method `call<defaultArg>1' for class `Rack::Lint'
-# wrong constant name <Class:Assertion>
-# wrong constant name <Class:ErrorWrapper>
-# wrong constant name <Class:HijackWrapper>
-# wrong constant name <Class:InputWrapper>
-# wrong constant name <Class:LintError>
-# wrong constant name _call
-# wrong constant name call<defaultArg>1
-# wrong constant name call
-# wrong constant name check_content_length
-# wrong constant name check_content_type
-# wrong constant name check_env
-# wrong constant name check_error
-# wrong constant name check_headers
-# wrong constant name check_hijack
-# wrong constant name check_hijack_response
-# wrong constant name check_input
-# wrong constant name check_status
-# wrong constant name close
-# wrong constant name each
-# wrong constant name initialize
-# wrong constant name verify_content_length
-# wrong constant name assert
-# wrong constant name <static-init>
-# wrong constant name close
-# wrong constant name flush
-# wrong constant name initialize
-# wrong constant name puts
-# wrong constant name write
-# wrong constant name <static-init>
-# wrong constant name close
-# wrong constant name close_read
-# wrong constant name close_write
-# wrong constant name closed?
-# wrong constant name flush
-# wrong constant name initialize
-# wrong constant name read
-# wrong constant name read_nonblock
-# wrong constant name write
-# wrong constant name write_nonblock
-# wrong constant name <static-init>
-# wrong constant name close
-# wrong constant name each
-# wrong constant name gets
-# wrong constant name initialize
-# wrong constant name read
-# wrong constant name rewind
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# undefined method `initialize<defaultArg>1' for class `Rack::Lock'
-# Did you mean?  initialize_dup
-# wrong constant name call
-# wrong constant name initialize<defaultArg>1
-# wrong constant name initialize
-# wrong constant name <static-init>
-# undefined method `initialize<defaultArg>1' for class `Rack::Logger'
-# Did you mean?  initialize_dup
-# wrong constant name call
-# wrong constant name initialize<defaultArg>1
-# wrong constant name initialize
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name params
-# wrong constant name type
-# wrong constant name call
-# wrong constant name initialize
-# wrong constant name method_override
-# wrong constant name <static-init>
-# undefined singleton method `mime_type<defaultArg>1' for `Rack::Mime'
-# wrong constant name <static-init>
-# wrong constant name match?
-# wrong constant name mime_type<defaultArg>1
-# wrong constant name mime_type
 # wrong constant name <Class:Generator>
-# wrong constant name <Class:MultipartPartLimitError>
-# wrong constant name <Class:Parser>
 # wrong constant name <Class:UploadedFile>
 # undefined method `initialize<defaultArg>1' for class `Rack::Multipart::Generator'
 # Did you mean?  initialize_dup
@@ -13982,50 +13696,6 @@
 # wrong constant name initialize<defaultArg>1
 # wrong constant name initialize
 # wrong constant name <static-init>
-# uninitialized constant Rack::Multipart::MultipartPartLimitError::Errno
-# wrong constant name <static-init>
-# wrong constant name <Class:BoundedIO>
-# wrong constant name <Class:Collector>
-# wrong constant name <Class:MultipartInfo>
-# wrong constant name initialize
-# wrong constant name on_read
-# wrong constant name result
-# wrong constant name state
-# undefined method `read<defaultArg>1' for class `Rack::Multipart::Parser::BoundedIO'
-# wrong constant name initialize
-# wrong constant name read<defaultArg>1
-# wrong constant name read
-# wrong constant name rewind
-# wrong constant name <static-init>
-# wrong constant name <Class:BufferPart>
-# uninitialized constant Rack::Multipart::Parser::Collector::Elem
-# wrong constant name <Class:MimePart>
-# wrong constant name <Class:TempfilePart>
-# wrong constant name each
-# wrong constant name initialize
-# wrong constant name on_mime_body
-# wrong constant name on_mime_finish
-# wrong constant name on_mime_head
-# wrong constant name close
-# wrong constant name file?
-# wrong constant name <static-init>
-# wrong constant name get_data
-# wrong constant name <static-init>
-# wrong constant name close
-# wrong constant name file?
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# uninitialized constant Rack::Multipart::Parser::MultipartInfo::Elem
-# wrong constant name params
-# wrong constant name params=
-# wrong constant name tmp_files
-# wrong constant name tmp_files=
-# wrong constant name <static-init>
-# wrong constant name []
-# wrong constant name members
-# wrong constant name <static-init>
-# wrong constant name parse
-# wrong constant name parse_boundary
 # undefined method `initialize<defaultArg>1' for class `Rack::Multipart::UploadedFile'
 # Did you mean?  initialize_dup
 # undefined method `initialize<defaultArg>2' for class `Rack::Multipart::UploadedFile'
@@ -14058,84 +13728,6 @@
 # wrong constant name original_filename
 # wrong constant name path
 # wrong constant name respond_to?
-# wrong constant name <static-init>
-# undefined singleton method `build_multipart<defaultArg>1' for `Rack::Multipart'
-# undefined singleton method `extract_multipart<defaultArg>1' for `Rack::Multipart'
-# undefined singleton method `parse_multipart<defaultArg>1' for `Rack::Multipart'
-# wrong constant name <static-init>
-# wrong constant name build_multipart<defaultArg>1
-# wrong constant name build_multipart
-# wrong constant name extract_multipart<defaultArg>1
-# wrong constant name extract_multipart
-# wrong constant name parse_multipart<defaultArg>1
-# wrong constant name parse_multipart
-# undefined method `add<defaultArg>1' for class `Rack::NullLogger'
-# undefined method `add<defaultArg>2' for class `Rack::NullLogger'
-# undefined method `debug<defaultArg>1' for class `Rack::NullLogger'
-# undefined method `error<defaultArg>1' for class `Rack::NullLogger'
-# undefined method `fatal<defaultArg>1' for class `Rack::NullLogger'
-# undefined method `info<defaultArg>1' for class `Rack::NullLogger'
-# undefined method `unknown<defaultArg>1' for class `Rack::NullLogger'
-# undefined method `warn<defaultArg>1' for class `Rack::NullLogger'
-# wrong constant name <<
-# wrong constant name add<defaultArg>1
-# wrong constant name add<defaultArg>2
-# wrong constant name add
-# wrong constant name call
-# wrong constant name close
-# wrong constant name datetime_format
-# wrong constant name datetime_format=
-# wrong constant name debug<defaultArg>1
-# wrong constant name debug
-# wrong constant name debug?
-# wrong constant name error<defaultArg>1
-# wrong constant name error
-# wrong constant name error?
-# wrong constant name fatal<defaultArg>1
-# wrong constant name fatal
-# wrong constant name fatal?
-# wrong constant name formatter
-# wrong constant name formatter=
-# wrong constant name info<defaultArg>1
-# wrong constant name info
-# wrong constant name info?
-# wrong constant name initialize
-# wrong constant name level
-# wrong constant name level=
-# wrong constant name progname
-# wrong constant name progname=
-# wrong constant name sev_threshold
-# wrong constant name sev_threshold=
-# wrong constant name unknown<defaultArg>1
-# wrong constant name unknown
-# wrong constant name warn<defaultArg>1
-# wrong constant name warn
-# wrong constant name warn?
-# wrong constant name <static-init>
-# wrong constant name _call
-# wrong constant name call
-# wrong constant name include
-# wrong constant name initialize
-# wrong constant name <static-init>
-# undefined method `initialize<defaultArg>1' for class `Rack::Reloader'
-# Did you mean?  initialize_dup
-# undefined method `initialize<defaultArg>2' for class `Rack::Reloader'
-# Did you mean?  initialize_dup
-# undefined method `reload!<defaultArg>1' for class `Rack::Reloader'
-# undefined method `safe_load<defaultArg>1' for class `Rack::Reloader'
-# wrong constant name <Class:Stat>
-# wrong constant name call
-# wrong constant name initialize<defaultArg>1
-# wrong constant name initialize<defaultArg>2
-# wrong constant name initialize
-# wrong constant name reload!<defaultArg>1
-# wrong constant name reload!
-# wrong constant name safe_load<defaultArg>1
-# wrong constant name safe_load
-# wrong constant name figure_path
-# wrong constant name rotation
-# wrong constant name safe_stat
-# wrong constant name <static-init>
 # wrong constant name <static-init>
 # uninitialized constant Rack::Request::DEFAULT_PORTS
 # uninitialized constant Rack::Request::FORM_DATA_MEDIA_TYPES
@@ -14175,99 +13767,6 @@
 #                Rack::Request::HTTP_X_FORWARDED_PROTO
 #                Rack::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Rack::Request::PARSEABLE_DATA_MEDIA_TYPES
-# wrong constant name close
-# wrong constant name each
-# wrong constant name gets
-# wrong constant name initialize
-# wrong constant name read
-# wrong constant name rewind
-# wrong constant name <static-init>
-# undefined method `initialize<defaultArg>1' for class `Rack::Server'
-# Did you mean?  initialize_dup
-# wrong constant name <Class:Options>
-# wrong constant name app
-# wrong constant name default_options
-# wrong constant name initialize<defaultArg>1
-# wrong constant name initialize
-# wrong constant name middleware
-# wrong constant name options
-# wrong constant name options=
-# wrong constant name server
-# wrong constant name start
-# wrong constant name handler_opts
-# wrong constant name parse!
-# wrong constant name <static-init>
-# undefined singleton method `start<defaultArg>1' for `Rack::Server'
-# wrong constant name <static-init>
-# wrong constant name default_middleware_by_environment
-# wrong constant name logging_middleware
-# wrong constant name middleware
-# wrong constant name start<defaultArg>1
-# wrong constant name start
-# wrong constant name <Class:Base64>
-# uninitialized constant Rack::Session::Cookie::DEFAULT_OPTIONS
-# wrong constant name <Class:Identity>
-# wrong constant name <Class:SessionId>
-# wrong constant name coder
-# wrong constant name <Class:JSON>
-# wrong constant name <Class:Marshal>
-# wrong constant name <Class:ZipJSON>
-# wrong constant name decode
-# wrong constant name encode
-# wrong constant name encode
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name encode
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name decode
-# wrong constant name encode
-# wrong constant name <static-init>
-# wrong constant name cookie_value
-# wrong constant name initialize
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name delete_session
-# wrong constant name find_session
-# wrong constant name generate_sid
-# wrong constant name mutex
-# wrong constant name pool
-# wrong constant name with_lock
-# wrong constant name write_session
-# wrong constant name <static-init>
-# wrong constant name call
-# wrong constant name dump_exception
-# wrong constant name h
-# wrong constant name initialize
-# wrong constant name prefers_plaintext?
-# wrong constant name pretty
-# wrong constant name template
-# wrong constant name <static-init>
-# wrong constant name call
-# wrong constant name h
-# wrong constant name initialize
-# wrong constant name <static-init>
-# undefined method `initialize<defaultArg>1' for class `Rack::Static'
-# Did you mean?  initialize_dup
-# wrong constant name add_index_root?
-# wrong constant name applicable_rules
-# wrong constant name call
-# wrong constant name can_serve
-# wrong constant name initialize<defaultArg>1
-# wrong constant name initialize
-# wrong constant name overwrite_file_path
-# wrong constant name route_file
-# wrong constant name <static-init>
-# wrong constant name call
-# wrong constant name initialize
-# wrong constant name <static-init>
-# undefined method `initialize<defaultArg>1' for class `Rack::URLMap'
-# Did you mean?  initialize_dup
-# wrong constant name call
-# wrong constant name initialize<defaultArg>1
-# wrong constant name initialize
-# wrong constant name remap
-# wrong constant name <static-init>
 # uninitialized constant Rails::Application::ABSTRACT_RAILTIES
 # uninitialized constant Rails::ApplicationController::ACTION_OPTIONS
 # uninitialized constant Rails::ApplicationController::AUTHENTICITY_TOKEN_LENGTH
@@ -14289,7 +13788,7 @@
 # uninitialized constant Rails::BacktraceCleaner::FORMATTED_GEMS_PATTERN
 # wrong constant name properties
 # wrong constant name properties=
-# undefined singleton method `property<defaultArg>1' for `#<Module:0x00007f93a8e3e7c8>'
+# undefined singleton method `property<defaultArg>1' for `#<Module:0x00007ff99c5dc440>'
 # wrong constant name <static-init>
 # wrong constant name properties
 # wrong constant name properties=
@@ -14962,25 +14461,25 @@
 # wrong constant name T.noreturn
 # wrong constant name T.noreturn
 # wrong constant name T.untyped
-# uninitialized constant #<Class:0x00007f93a3f6bbf0>::ACTIONS
+# uninitialized constant #<Class:0x00007ff99ec980c0>::ACTIONS
 # Did you mean?  Task::ACTIONS
-# uninitialized constant #<Class:0x00007f93a3f6bbf0>::CALLBACKS
+# uninitialized constant #<Class:0x00007ff99ec980c0>::CALLBACKS
 # Did you mean?  Task::Callbacks
 #                Task::Callback
 #                Task::CALLBACKS
-# uninitialized constant #<Class:0x00007f93a3f6bbf0>::CALLBACK_FILTER_TYPES
+# uninitialized constant #<Class:0x00007ff99ec980c0>::CALLBACK_FILTER_TYPES
 # Did you mean?  Task::CALLBACK_FILTER_TYPES
-# uninitialized constant #<Class:0x00007f93a3f6bbf0>::CALL_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007ff99ec980c0>::CALL_COMPILABLE_REGEXP
 # Did you mean?  Task::CALL_COMPILABLE_REGEXP
 # wrong constant name <Class:GeneratedAssociationMethods>
 # wrong constant name <Class:GeneratedAttributeMethods>
-# uninitialized constant #<Class:0x00007f93a3f6bbf0>::MAX_PASSWORD_LENGTH_ALLOWED
+# uninitialized constant #<Class:0x00007ff99ec980c0>::MAX_PASSWORD_LENGTH_ALLOWED
 # Did you mean?  Task::MAX_PASSWORD_LENGTH_ALLOWED
-# uninitialized constant #<Class:0x00007f93a3f6bbf0>::NAME_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007ff99ec980c0>::NAME_COMPILABLE_REGEXP
 # Did you mean?  Task::NAME_COMPILABLE_REGEXP
-# uninitialized constant #<Class:0x00007f93a3f6bbf0>::RESTRICTED_CLASS_METHODS
+# uninitialized constant #<Class:0x00007ff99ec980c0>::RESTRICTED_CLASS_METHODS
 # Did you mean?  Task::RESTRICTED_CLASS_METHODS
-# uninitialized constant #<Class:0x00007f93a3f6bbf0>::UNASSIGNABLE_KEYS
+# uninitialized constant #<Class:0x00007ff99ec980c0>::UNASSIGNABLE_KEYS
 # Did you mean?  Task::UNASSIGNABLE_KEYS
 # wrong constant name after_add_for_companies
 # wrong constant name after_add_for_companies=
@@ -15575,25 +15074,25 @@
 # wrong constant name normalize_header
 # wrong constant name <Class:Stream>
 # wrong constant name <Class:Visitors>
-# uninitialized constant #<Class:0x00007f93a27d65f8>::ACTIONS
+# uninitialized constant #<Class:0x00007ff99ec921e8>::ACTIONS
 # Did you mean?  Year::ACTIONS
-# uninitialized constant #<Class:0x00007f93a27d65f8>::CALLBACKS
+# uninitialized constant #<Class:0x00007ff99ec921e8>::CALLBACKS
 # Did you mean?  Year::Callbacks
 #                Year::Callback
 #                Year::CALLBACKS
-# uninitialized constant #<Class:0x00007f93a27d65f8>::CALLBACK_FILTER_TYPES
+# uninitialized constant #<Class:0x00007ff99ec921e8>::CALLBACK_FILTER_TYPES
 # Did you mean?  Year::CALLBACK_FILTER_TYPES
-# uninitialized constant #<Class:0x00007f93a27d65f8>::CALL_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007ff99ec921e8>::CALL_COMPILABLE_REGEXP
 # Did you mean?  Year::CALL_COMPILABLE_REGEXP
 # wrong constant name <Class:GeneratedAssociationMethods>
 # wrong constant name <Class:GeneratedAttributeMethods>
-# uninitialized constant #<Class:0x00007f93a27d65f8>::MAX_PASSWORD_LENGTH_ALLOWED
+# uninitialized constant #<Class:0x00007ff99ec921e8>::MAX_PASSWORD_LENGTH_ALLOWED
 # Did you mean?  Year::MAX_PASSWORD_LENGTH_ALLOWED
-# uninitialized constant #<Class:0x00007f93a27d65f8>::NAME_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007ff99ec921e8>::NAME_COMPILABLE_REGEXP
 # Did you mean?  Year::NAME_COMPILABLE_REGEXP
-# uninitialized constant #<Class:0x00007f93a27d65f8>::RESTRICTED_CLASS_METHODS
+# uninitialized constant #<Class:0x00007ff99ec921e8>::RESTRICTED_CLASS_METHODS
 # Did you mean?  Year::RESTRICTED_CLASS_METHODS
-# uninitialized constant #<Class:0x00007f93a27d65f8>::UNASSIGNABLE_KEYS
+# uninitialized constant #<Class:0x00007ff99ec921e8>::UNASSIGNABLE_KEYS
 # Did you mean?  Year::UNASSIGNABLE_KEYS
 # wrong constant name <static-init>
 # wrong constant name created_at
